@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Tue Feb  7 21:18:44 2023
+# Process ID: 399047
+# Current directory: /home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/designs/leon3-digilent-arty-a7/vivado/thesign/thesign.runs/synth_1
+# Command line: vivado -log leon3mp.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source leon3mp.tcl
+# Log file: /home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/designs/leon3-digilent-arty-a7/vivado/thesign/thesign.runs/synth_1/leon3mp.vds
+# Journal file: /home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/designs/leon3-digilent-arty-a7/vivado/thesign/thesign.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source leon3mp.tcl -notrace

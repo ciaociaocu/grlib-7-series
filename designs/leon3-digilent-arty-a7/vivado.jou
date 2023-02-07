@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sat Feb  4 17:47:28 2023
+# Process ID: 167860
+# Current directory: /home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/designs/leon3-digilent-arty-a7
+# Command line: vivado -mode gui -source ./vivado/leon3mp_vivado.tcl
+# Log file: /home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/designs/leon3-digilent-arty-a7/vivado.log
+# Journal file: /home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/designs/leon3-digilent-arty-a7/vivado.jou
+#-----------------------------------------------------------
+start_gui
+source ./vivado/leon3mp_vivado.tcl
+update_compile_order -fileset sources_1
+upgrade_ip -vlnv xilinx.com:ip:mig_7series:4.2 [get_ips  mig] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips mig] -no_script -sync -force -quiet
+generate_target all [get_files  /home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/designs/leon3-digilent-arty-a7/vivado/thesign/thesign.srcs/sources_1/ip/mig/mig.xci]
+catch { config_ip_cache -export [get_ips -all mig] }
+export_ip_user_files -of_objects [get_files /home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/designs/leon3-digilent-arty-a7/vivado/thesign/thesign.srcs/sources_1/ip/mig/mig.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] /home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/designs/leon3-digilent-arty-a7/vivado/thesign/thesign.srcs/sources_1/ip/mig/mig.xci]
+launch_runs -jobs 16 mig_synth_1
+export_simulation -of_objects [get_files /home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/designs/leon3-digilent-arty-a7/vivado/thesign/thesign.srcs/sources_1/ip/mig/mig.xci] -directory /home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/designs/leon3-digilent-arty-a7/vivado/thesign/thesign.ip_user_files/sim_scripts -ip_user_files_dir /home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/designs/leon3-digilent-arty-a7/vivado/thesign/thesign.ip_user_files -ipstatic_source_dir /home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/designs/leon3-digilent-arty-a7/vivado/thesign/thesign.ip_user_files/ipstatic -lib_map_path [list {modelsim=/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/designs/leon3-digilent-arty-a7/vivado/thesign/thesign.cache/compile_simlib/modelsim} {questa=/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/designs/leon3-digilent-arty-a7/vivado/thesign/thesign.cache/compile_simlib/questa} {ies=/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/designs/leon3-digilent-arty-a7/vivado/thesign/thesign.cache/compile_simlib/ies} {xcelium=/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/designs/leon3-digilent-arty-a7/vivado/thesign/thesign.cache/compile_simlib/xcelium} {vcs=/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/designs/leon3-digilent-arty-a7/vivado/thesign/thesign.cache/compile_simlib/vcs} {riviera=/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/designs/leon3-digilent-arty-a7/vivado/thesign/thesign.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+set_property target_simulator XSim [current_project]
+launch_simulation

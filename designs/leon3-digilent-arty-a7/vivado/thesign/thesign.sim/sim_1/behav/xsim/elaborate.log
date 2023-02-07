@@ -1,0 +1,302 @@
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2019.1/bin/unwrapped/lnx64.o/xelab -wto bdd47f0d299f49108c3dd61141ae523f --incr --debug typical --relax --mt 8 -L xil_defaultlib -L grlib -L techmap -L gaisler -L eth -L opencores -L work -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot testbench_behav work.testbench work.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-1766] non-static loop limit of 500000 exceeded [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/lib/gaisler/spi/spi_flash.vhd:466]
+WARNING: [VRFC 10-3091] actual bit length 12 differs from formal bit length 4 for port 'pi_dqs_found_lanes' [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/designs/leon3-digilent-arty-a7/vivado/thesign/thesign.srcs/sources_1/ip/mig/mig/user_design/rtl/phy/mig_7series_v4_2_ddr_mc_phy_wrapper.v:1671]
+WARNING: [VRFC 10-3091] actual bit length 12 differs from formal bit length 4 for port 'pi_phase_locked_lanes' [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/designs/leon3-digilent-arty-a7/vivado/thesign/thesign.srcs/sources_1/ip/mig/mig/user_design/rtl/phy/mig_7series_v4_2_ddr_mc_phy_wrapper.v:1679]
+WARNING: [VRFC 10-3091] actual bit length 12 differs from formal bit length 4 for port 'pi_dqs_found_lanes' [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/designs/leon3-digilent-arty-a7/vivado/thesign/thesign.srcs/sources_1/ip/mig/mig/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_top.v:1340]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1fs
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package grlib.version
+Compiling package grlib.stdlib
+Compiling package grlib.stdio
+Compiling package grlib.config_types
+Compiling package grlib.config
+Compiling package grlib.amba
+Compiling package grlib.devices
+Compiling package techmap.gencomp
+Compiling package gaisler.sim
+Compiling package work.debug
+Compiling package work.config
+Compiling package gaisler.leon3
+Compiling package gaisler.uart
+Compiling package gaisler.misc
+Compiling package gaisler.net
+Compiling package gaisler.jtag
+Compiling package gaisler.i2c
+Compiling package gaisler.spi
+Compiling package techmap.allpads
+Compiling package ieee.math_real
+Compiling package grlib.testlib
+Compiling package techmap.netcomp
+Compiling package gaisler.libfpu
+Compiling package gaisler.arith
+Compiling package gaisler.mmuconfig
+Compiling package gaisler.libiu
+Compiling package gaisler.mmuiface
+Compiling package gaisler.libcache
+Compiling package gaisler.libleon3
+Compiling package grlib.sparc
+Compiling package grlib.sparc_disas
+Compiling package grlib.multlib
+Compiling package techmap.allmul
+Compiling package ieee.std_logic_arith
+Compiling package gaisler.libmmu
+Compiling package techmap.allmem
+Compiling package ieee.std_logic_signed
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_textio
+Compiling package grlib.dftlib
+Compiling package gaisler.libjtagcom
+Compiling package techmap.alltap
+Compiling package techmap.allclkgen
+Compiling package gaisler.ahb2mig_7series_pkg
+Compiling package opencores.i2coc
+Compiling package gaisler.ethernet_mac
+Compiling package eth.ethcomp
+Compiling package eth.grethpkg
+Compiling package vl.vl_types
+Compiling module work.glbl
+Compiling architecture sim of entity gaisler.spi_flash [\spi_flash(ftype=4,memoffset=419...]
+Compiling architecture rb18_internal_vhdl_v of entity unisim.RB18_INTERNAL_VHDL [\RB18_INTERNAL_VHDL(bram_size=18...]
+Compiling architecture ramb18e1_v of entity unisim.RAMB18E1 [\RAMB18E1(read_width_a=18,sim_de...]
+Compiling architecture ramb16_s18_v of entity unisim.RAMB16_S18 [\RAMB16_S18(0,19)(0,19)(1,11)(0,...]
+Compiling architecture behav of entity techmap.unisim_syncram [\unisim_syncram(abits=10)\]
+Compiling architecture behav of entity techmap.unisim_syncram64 [\unisim_syncram64(abits=10)\]
+Compiling architecture rtl of entity techmap.syncram64 [\syncram64(tech=50,abits=10,cust...]
+Compiling architecture rtl of entity gaisler.tbufmem [\tbufmem(tech=50,tbuf=16)\]
+Compiling architecture simple of entity techmap.gen_mult_pipe [\gen_mult_pipe(a_width=33,b_widt...]
+Compiling architecture rtl of entity techmap.techmult [\techmult(tech=50,a_width=33,b_w...]
+Compiling architecture rtl of entity gaisler.mul32 [\mul32(tech=50,multype=3,pipe=1)...]
+Compiling architecture rtl of entity gaisler.div32 [div32_default]
+Compiling architecture rtl of entity gaisler.iu3 [\iu3(isets=2,dsets=2,v8=50,dsu=1...]
+Compiling architecture rtl of entity gaisler.mmu_icache [\mmu_icache(fabtech=50,icen=1,is...]
+Compiling architecture rtl of entity gaisler.mmu_dcache [\mmu_dcache(dsu=1,dcen=1,dsets=2...]
+Compiling architecture rtl of entity gaisler.mmu_acache [\mmu_acache(ilinesize=8)\]
+Compiling architecture rtl of entity gaisler.mmu_cache [\mmu_cache(fabtech=50,memtech=50...]
+Compiling architecture rtl of entity gaisler.proc3 [\proc3(fabtech=50,memtech=50,dsu...]
+Compiling architecture rb36_internal_vhdl_v of entity unisim.RB36_INTERNAL_VHDL [\RB36_INTERNAL_VHDL(init_a="0000...]
+Compiling architecture ramb36e1_v of entity unisim.RAMB36E1 [\RAMB36E1(read_width_a=36,read_w...]
+Compiling architecture ramb16_s36_s36_v of entity unisim.RAMB16_S36_S36 [\RAMB16_S36_S36(sim_collision_ch...]
+Compiling architecture behav of entity techmap.unisim_syncram_dp [\unisim_syncram_dp(abits=8)\]
+Compiling architecture behav of entity techmap.unisim_syncram_2p [\unisim_syncram_2p(abits=8,dbits...]
+Compiling architecture rtl of entity techmap.memrwcol [\memrwcol(techwrfst=0,techrwcol=...]
+Compiling architecture rtl of entity techmap.syncram_2p [\syncram_2p(tech=50,abits=8,dbit...]
+Compiling architecture rtl of entity techmap.regfile_3p [\regfile_3p(tech=50,abits=8,dbit...]
+Compiling architecture rtl of entity gaisler.regfile_3p_l3 [\regfile_3p_l3(tech=50,abits=8,d...]
+Compiling architecture rb36_internal_vhdl_v of entity unisim.RB36_INTERNAL_VHDL [\RB36_INTERNAL_VHDL(init_a="0000...]
+Compiling architecture ramb36e1_v of entity unisim.RAMB36E1 [\RAMB36E1(read_width_a=36,sim_de...]
+Compiling architecture ramb16_s36_v of entity unisim.RAMB16_S36 [\RAMB16_S36(0,35)(0,35)(1,11)(0,...]
+Compiling architecture behav of entity techmap.unisim_syncram [\unisim_syncram(dbits=26)\]
+Compiling architecture rtl of entity techmap.syncram [\syncram(tech=50,abits=9,dbits=2...]
+Compiling architecture rb18_internal_vhdl_v of entity unisim.RB18_INTERNAL_VHDL [\RB18_INTERNAL_VHDL(bram_size=18...]
+Compiling architecture ramb18e1_v of entity unisim.RAMB18E1 [\RAMB18E1(init_a="0000",read_wid...]
+Compiling architecture ramb16_s4_v of entity unisim.RAMB16_S4 [\RAMB16_S4(0,3)(0,3)(1,11)(0,255...]
+Compiling architecture behav of entity techmap.unisim_syncram [\unisim_syncram(abits=12)\]
+Compiling architecture rtl of entity techmap.syncram [\syncram(tech=50,abits=12,dbits=...]
+Compiling architecture behav of entity techmap.unisim_syncram_dp [\unisim_syncram_dp(abits=9,dbits...]
+Compiling architecture rtl of entity techmap.memrwcol [\memrwcol(techwrfst=0,techrwcol=...]
+Compiling architecture rtl of entity techmap.syncram_dp [\syncram_dp(tech=50,abits=9,dbit...]
+Compiling architecture rtl of entity gaisler.cachemem [\cachemem(tech=50,icen=1,isets=2...]
+Compiling architecture beh of entity grlib.report_version [\report_version(msg1="leon3_0:_L...]
+Compiling architecture rtl of entity gaisler.leon3x [\leon3x(fabtech=50,memtech=50,ds...]
+Compiling architecture rtl of entity gaisler.leon3s [\leon3s(fabtech=50,memtech=50,ds...]
+Compiling architecture beh of entity grlib.report_version [\report_version(msg1="dsu3_2:_LE...]
+Compiling architecture rtl of entity gaisler.dsu3x [\dsu3x(hindex=2,tech=50,kbytes=1...]
+Compiling architecture rtl of entity gaisler.dsu3 [\dsu3(hindex=2,tech=50,kbytes=16...]
+Compiling architecture bufg_v of entity unisim.BUFG [bufg_default]
+Compiling architecture rtl of entity techmap.clkbuf_xilinx [\clkbuf_xilinx(buftype=2)\]
+Compiling architecture rtl of entity techmap.techbuf [\techbuf(buftype=2,tech=50)\]
+Compiling architecture rtl of entity techmap.grdff [\grdff(tech=0)\]
+Compiling architecture rtl of entity techmap.grnand2 [\grnand2(tech=50)\]
+Compiling architecture rtl of entity gaisler.jtagcom2 [\jtagcom2(gatetech=50,isel=1)\]
+Compiling architecture rtl of entity grlib.ahbmst [\ahbmst(hindex=1,venid=1,devid=2...]
+Compiling architecture bscane2_v of entity unisim.BSCANE2 [\BSCANE2(1,5)\]
+Compiling architecture bscane2_v of entity unisim.BSCANE2 [\BSCANE2(jtag_chain=2)(1,5)\]
+Compiling architecture rtl of entity techmap.artix7_tap [artix7_tap_default]
+Compiling architecture rtl of entity techmap.tap [\tap(tech=50,irlen=6)\]
+Compiling architecture rtl of entity grlib.trstmux [\trstmux(scantest=0)\]
+Compiling architecture beh of entity grlib.report_version [\report_version(msg1="ahbjtag_AH...]
+Compiling architecture struct of entity gaisler.ahbjtag [\ahbjtag(tech=50,hindex=1)\]
+Compiling module unisims_ver.IDELAYCTRL_default
+Compiling module xil_defaultlib.mig_7series_v4_2_iodelay_ctrl(IO...
+Compiling module xil_defaultlib.mig_7series_v4_2_clk_ibuf(SYSCLK...
+Compiling module unisims_ver.XADC(INIT_40=16'b01000000000000,...
+Compiling module xil_defaultlib.mig_7series_v4_2_tempmon_default
+Compiling module unisims_ver.PLLE2_ADV(CLKFBOUT_MULT=8,CLKIN1...
+Compiling module unisims_ver.BUFG
+Compiling module unisims_ver.BUFH
+Compiling module unisims_ver.MMCME2_ADV(BANDWIDTH="HIGH",CLKF...
+Compiling module xil_defaultlib.mig_7series_v4_2_infrastructure(...
+Compiling module unisims_ver.SRLC32E_default
+Compiling module xil_defaultlib.mig_7series_v4_2_rank_cntrl(DQRD...
+Compiling module xil_defaultlib.mig_7series_v4_2_round_robin_arb...
+Compiling module xil_defaultlib.mig_7series_v4_2_round_robin_arb...
+Compiling module xil_defaultlib.mig_7series_v4_2_rank_common(MAI...
+Compiling module xil_defaultlib.mig_7series_v4_2_rank_mach(CS_WI...
+Compiling module xil_defaultlib.mig_7series_v4_2_bank_compare(CO...
+Compiling module xil_defaultlib.mig_7series_v4_2_bank_state(DATA...
+Compiling module xil_defaultlib.mig_7series_v4_2_bank_queue_defa...
+Compiling module xil_defaultlib.mig_7series_v4_2_bank_cntrl(COL_...
+Compiling module xil_defaultlib.mig_7series_v4_2_bank_state(DATA...
+Compiling module xil_defaultlib.mig_7series_v4_2_bank_queue(ID=1...
+Compiling module xil_defaultlib.mig_7series_v4_2_bank_cntrl(COL_...
+Compiling module xil_defaultlib.mig_7series_v4_2_bank_state(DATA...
+Compiling module xil_defaultlib.mig_7series_v4_2_bank_queue(ID=2...
+Compiling module xil_defaultlib.mig_7series_v4_2_bank_cntrl(COL_...
+Compiling module xil_defaultlib.mig_7series_v4_2_bank_state(DATA...
+Compiling module xil_defaultlib.mig_7series_v4_2_bank_queue(ID=3...
+Compiling module xil_defaultlib.mig_7series_v4_2_bank_cntrl(COL_...
+Compiling module xil_defaultlib.mig_7series_v4_2_bank_common(LOW...
+Compiling module xil_defaultlib.mig_7series_v4_2_round_robin_arb...
+Compiling module xil_defaultlib.mig_7series_v4_2_arb_row_col(nCK...
+Compiling module xil_defaultlib.mig_7series_v4_2_arb_select(CS_W...
+Compiling module xil_defaultlib.mig_7series_v4_2_arb_mux(CS_WIDT...
+Compiling module xil_defaultlib.mig_7series_v4_2_bank_mach(COL_W...
+Compiling module unisims_ver.RAM32M
+Compiling module xil_defaultlib.mig_7series_v4_2_col_mach(COL_WI...
+Compiling module xil_defaultlib.mig_7series_v4_2_mc(COL_WIDTH=10...
+Compiling module unisims_ver.OBUF
+Compiling module unisims_ver.OBUFT
+Compiling module unisims_ver.IOBUF_INTERMDISABLE(IBUF_LOW_PWR...
+Compiling module unisims_ver.IOBUFDS_INTERMDISABLE(DQS_BIAS="...
+Compiling module xil_defaultlib.mig_7series_v4_2_ddr_of_pre_fifo...
+Compiling module xil_defaultlib.mig_7series_v4_2_ddr_of_pre_fifo...
+Compiling module unisims_ver.BUFIO
+Compiling module xil_defaultlib.mig_7series_v4_2_ddr_of_pre_fifo...
+Compiling module unisims_ver.PHASER_OUT_PHY(FINE_DELAY=60,MEM...
+Compiling module unisims_ver.OUT_FIFO(ARRAY_MODE="ARRAY_MODE_...
+Compiling module unisims_ver.OSERDESE2(DATA_RATE_OQ="SDR",DAT...
+Compiling module xil_defaultlib.mig_7series_v4_2_ddr_byte_group_...
+Compiling module unisims_ver.ODDR(DDR_CLK_EDGE="SAME_EDGE")
+Compiling module unisims_ver.OBUFDS
+Compiling module xil_defaultlib.mig_7series_v4_2_ddr_byte_lane(B...
+Compiling module xil_defaultlib.mig_7series_v4_2_ddr_byte_group_...
+Compiling module xil_defaultlib.mig_7series_v4_2_ddr_byte_lane(A...
+Compiling module xil_defaultlib.mig_7series_v4_2_ddr_if_post_fif...
+Compiling module unisims_ver.PHASER_IN_PHY(BURST_MODE="TRUE",...
+Compiling module unisims_ver.PHASER_OUT_PHY(CLKOUT_DIV=2,DATA...
+Compiling module unisims_ver.IN_FIFO
+Compiling module unisims_ver.OUT_FIFO
+Compiling module unisims_ver.ISERDESE2(INTERFACE_TYPE="MEMORY...
+Compiling module unisims_ver.IDELAYE2(HIGH_PERFORMANCE_MODE="...
+Compiling module unisims_ver.OSERDESE2(INIT_OQ=1'b1,INIT_TQ=1...
+Compiling module unisims_ver.OSERDESE2(INIT_OQ=1'b1,INIT_TQ=1...
+Compiling module xil_defaultlib.mig_7series_v4_2_ddr_byte_group_...
+Compiling module xil_defaultlib.mig_7series_v4_2_ddr_byte_lane(A...
+Compiling module unisims_ver.PHASER_IN_PHY(BURST_MODE="TRUE",...
+Compiling module xil_defaultlib.mig_7series_v4_2_ddr_byte_lane(A...
+Compiling module unisims_ver.PHY_CONTROL(AO_TOGGLE=1,BURST_MO...
+Compiling module unisims_ver.PHASER_REF
+Compiling module xil_defaultlib.mig_7series_v4_2_ddr_phy_4lanes(...
+Compiling module xil_defaultlib.mig_7series_v4_2_ddr_mc_phy(DATA...
+Compiling module xil_defaultlib.mig_7series_v4_2_ddr_mc_phy_wrap...
+Compiling module xil_defaultlib.mig_7series_v4_2_ddr_prbs_gen(DQ...
+Compiling module xil_defaultlib.mig_7series_v4_2_ddr_phy_init(tC...
+Compiling module xil_defaultlib.mig_7series_v4_2_ddr_phy_wrcal(n...
+Compiling module xil_defaultlib.mig_7series_v4_2_ddr_phy_wrlvl(D...
+Compiling module xil_defaultlib.mig_7series_v4_2_ddr_phy_ck_addr...
+Compiling module xil_defaultlib.mig_7series_v4_2_ddr_phy_dqs_fou...
+Compiling module xil_defaultlib.mig_7series_v4_2_ddr_phy_rdlvl(n...
+Compiling module xil_defaultlib.mig_7series_v4_2_ddr_phy_tempmon...
+Compiling module xil_defaultlib.mig_7series_v4_2_ddr_calib_top(n...
+Compiling module xil_defaultlib.mig_7series_v4_2_ddr_phy_top(DDR...
+Compiling module xil_defaultlib.mig_7series_v4_2_mem_intfc(PAYLO...
+Compiling module xil_defaultlib.mig_7series_v4_2_ui_cmd(ADDR_WID...
+Compiling module xil_defaultlib.mig_7series_v4_2_ui_wr_data(APP_...
+Compiling module xil_defaultlib.mig_7series_v4_2_ui_rd_data(APP_...
+Compiling module xil_defaultlib.mig_7series_v4_2_ui_top(APP_DATA...
+Compiling module xil_defaultlib.mig_7series_v4_2_memc_ui_top_std...
+Compiling module xil_defaultlib.mig_mig_default
+Compiling module xil_defaultlib.mig
+Compiling architecture rtl of entity work.ahb2mig_arty_a7 [\ahb2mig_arty_a7(hindex=5,haddr=...]
+Compiling architecture plle2_adv_v of entity unisim.PLLE2_ADV [\PLLE2_ADV(clkfbout_mult=10,clki...]
+Compiling architecture impl of entity work.clockers_mig [clockers_mig_default]
+Compiling architecture beh of entity grlib.report_version [\report_version(msg1="spimctrl0:...]
+Compiling architecture rtl of entity gaisler.spimctrl [\spimctrl(hirq=10,fmask=3584,iom...]
+Compiling architecture beh of entity grlib.report_version [\report_version(msg1="irqmp:_Mul...]
+Compiling architecture rtl of entity gaisler.irqmp [\irqmp(pindex=2,paddr=2)\]
+Compiling architecture beh of entity grlib.report_version [\report_version(msg1="gptimer3:_...]
+Compiling architecture rtl of entity gaisler.gptimer [\gptimer(pindex=3,paddr=3,pirq=8...]
+Compiling architecture structural of entity opencores.i2c_master_bit_ctrl [\i2c_master_bit_ctrl(filter=5,dy...]
+Compiling architecture structural of entity opencores.i2c_master_byte_ctrl [\i2c_master_byte_ctrl(filter=5,d...]
+Compiling architecture beh of entity grlib.report_version [\report_version(msg1="i2cmst4:_A...]
+Compiling architecture rtl of entity gaisler.i2cmst [\i2cmst(pindex=4,paddr=4,pirq=3,...]
+Compiling architecture behav of entity techmap.generic_syncram_2p [\generic_syncram_2p(abits=2)\]
+Compiling architecture rtl of entity techmap.memrwcol [\memrwcol(techwrfst=0,techrwcol=...]
+Compiling architecture rtl of entity techmap.syncram_2p [\syncram_2p(tech=50,abits=2,dbit...]
+Compiling architecture rtl of entity gaisler.spictrlx [\spictrlx(rev=6,fdepth=2,slvsele...]
+Compiling architecture beh of entity grlib.report_version [\report_version(msg1="spictrl6:_...]
+Compiling architecture rtl of entity gaisler.spictrl [\spictrl(pindex=6,paddr=6,pirq=5...]
+Compiling architecture beh of entity grlib.report_version [\report_version(msg1="apbuart1:_...]
+Compiling architecture rtl of entity gaisler.apbuart [\apbuart(pindex=1,paddr=1,pirq=2...]
+Compiling architecture beh of entity grlib.report_version [\report_version(msg1="grgpio9:_2...]
+Compiling architecture rtl of entity gaisler.grgpio [\grgpio(pindex=9,paddr=9,imask=1...]
+Compiling architecture obuft_v of entity unisim.OBUFT [\OBUFT(iostandard="LVTTL")(1,9)(...]
+Compiling architecture rtl of entity techmap.unisim_toutpad [\unisim_toutpad(voltage=3)\]
+Compiling architecture rtl of entity techmap.toutpad [\toutpad(tech=50,voltage=3)\]
+Compiling architecture rtl of entity techmap.toutpadvv [\toutpadvv(tech=50,voltage=3,wid...]
+Compiling architecture beh of entity grlib.report_version [\report_version(msg1="grgpio10:_...]
+Compiling architecture rtl of entity gaisler.grgpio [\grgpio(pindex=10,paddr=10,imask...]
+Compiling architecture rtl of entity techmap.iopadvv [\iopadvv(tech=50,voltage=3,width...]
+Compiling architecture beh of entity grlib.report_version [\report_version(msg1="grgpio11:_...]
+Compiling architecture rtl of entity gaisler.grgpio [\grgpio(pindex=11,paddr=11,imask...]
+Compiling architecture rtl of entity techmap.iopadvv [\iopadvv(tech=50,voltage=3,width...]
+Compiling architecture rtl of entity techmap.iopadvv [\iopadvv(tech=50,voltage=3,width...]
+Compiling architecture behav of entity techmap.unisim_syncram_2p [\unisim_syncram_2p(abits=8,dbits...]
+Compiling architecture rtl of entity techmap.memrwcol [\memrwcol(techwrfst=0,techrwcol=...]
+Compiling architecture rtl of entity techmap.syncram_2p [\syncram_2p(tech=50,abits=8,dbit...]
+Compiling architecture behav of entity techmap.generic_syncram_2p [\generic_syncram_2p(abits=3)\]
+Compiling architecture rtl of entity techmap.memrwcol [\memrwcol(techwrfst=0,techrwcol=...]
+Compiling architecture rtl of entity techmap.syncram_2p [\syncram_2p(tech=50,abits=3,dbit...]
+Compiling architecture rb18_internal_vhdl_v of entity unisim.RB18_INTERNAL_VHDL [\RB18_INTERNAL_VHDL(bram_size=18...]
+Compiling architecture ramb18e1_v of entity unisim.RAMB18E1 [\RAMB18E1(init_a="0000",init_b="...]
+Compiling architecture ramb16_s4_s4_v of entity unisim.RAMB16_S4_S4 [\RAMB16_S4_S4(sim_collision_chec...]
+Compiling architecture behav of entity techmap.unisim_syncram_dp [\unisim_syncram_dp(abits=12,dbit...]
+Compiling architecture behav of entity techmap.unisim_syncram_2p [\unisim_syncram_2p(abits=12,dbit...]
+Compiling architecture rtl of entity techmap.memrwcol [\memrwcol(techwrfst=0,techrwcol=...]
+Compiling architecture rtl of entity techmap.syncram_2p [\syncram_2p(tech=50,abits=12,dbi...]
+Compiling architecture rtl of entity eth.eth_rstgen [eth_rstgen_default]
+Compiling architecture rtl of entity eth.greth_tx [greth_tx_default]
+Compiling architecture rtl of entity eth.greth_rx [greth_rx_default]
+Compiling architecture rtl of entity eth.eth_ahb_mst [eth_ahb_mst_default]
+Compiling architecture rtl of entity eth.grethc [\grethc(mdcscaler=83,enable_mdio...]
+Compiling architecture beh of entity grlib.report_version [\report_version(msg1="greth2:_10...]
+Compiling architecture rtl of entity gaisler.greth [\greth(hindex=2,pindex=15,paddr=...]
+Compiling architecture rtl of entity gaisler.grethm [\grethm(hindex=2,pindex=15,paddr...]
+Compiling architecture ibufg_v of entity unisim.IBUFG [\IBUFG(iostandard="LVTTL")(1,9)(...]
+Compiling architecture rtl of entity techmap.unisim_clkpad [\unisim_clkpad(voltage=3,arch=2,...]
+Compiling architecture rtl of entity techmap.clkpad [\clkpad(tech=50,voltage=3,arch=2...]
+Compiling architecture rtl of entity techmap.outpadv [\outpadv(tech=50,voltage=3,width...]
+Compiling architecture ibuf_v of entity unisim.IBUF [\IBUF(iostandard="LVTTL")(1,9)(1...]
+Compiling architecture rtl of entity techmap.unisim_inpad [\unisim_inpad(voltage=3)\]
+Compiling architecture rtl of entity techmap.inpad [\inpad(tech=50,voltage=3)\]
+Compiling architecture rtl of entity techmap.inpadv [\inpadv(tech=50,voltage=3,width=...]
+Compiling architecture rtl of entity gaisler.rstgen [rstgen_default]
+Compiling architecture rtl of entity grlib.ahbctrl [\ahbctrl(rrobin=1,nahbm=3,nahbs=...]
+Compiling architecture obuf_v of entity unisim.OBUF [\OBUF(iostandard="LVTTL")(1,9)(1...]
+Compiling architecture rtl of entity techmap.unisim_outpad [\unisim_outpad(voltage=3)\]
+Compiling architecture rtl of entity techmap.outpad [\outpad(tech=50,voltage=3)\]
+Compiling architecture rtl of entity grlib.apbctrlx [\apbctrlx(hindex0=1,haddr0=2048,...]
+Compiling architecture struct of entity grlib.apbctrl [\apbctrl(hindex=1,haddr=2048,nsl...]
+Compiling architecture iobuf_v of entity unisim.IOBUF [\IOBUF(iostandard="LVTTL")(1,5)(...]
+Compiling architecture rtl of entity techmap.unisim_iopad [\unisim_iopad(voltage=3)\]
+Compiling architecture rtl of entity techmap.iopad [\iopad(tech=50,voltage=3)\]
+Compiling architecture beh of entity grlib.report_version [\report_version(msg1="testmod4:_...]
+Compiling architecture rtl of entity gaisler.ahbrep [\ahbrep(hindex=4,haddr=512)\]
+Compiling architecture beh of entity grlib.report_version [\report_version(msg1="LEON3_Demo...]
+Compiling architecture beh of entity grlib.report_design [\report_design(msg1="LEON3_Demon...]
+Compiling architecture rtl of entity work.leon3mp [\leon3mp(fabtech=50,memtech=50,p...]
+Compiling architecture behav of entity work.testbench
+Built simulation snapshot testbench_behav

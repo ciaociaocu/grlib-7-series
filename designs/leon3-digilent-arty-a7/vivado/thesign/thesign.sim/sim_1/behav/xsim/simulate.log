@@ -1,0 +1,114 @@
+Vivado Simulator 2019.1
+Time resolution is 1 fs
+WARNING: file design.txt could not be opened
+ *** Warning: The analog data file design.txt for XADC instance testbench.d3.mig_gen.gen_mig.ddrc.MCB_inst.u_mig_mig.temp_mon_enabled.u_tempmon.xadc_supplied_temperature.XADC_inst was not found. Use the SIM_MONITOR_FILE parameter to specify the analog data file name or use the default name: design.txt.
+
+############# Write Clocks PLLE2_ADV Parameters #############
+
+nCK_PER_CLK      =       4
+CLK_PERIOD       =    6000
+CLKIN1_PERIOD    =   6.000
+DIVCLK_DIVIDE    =       1
+CLKFBOUT_MULT    =       8
+VCO_PERIOD       =   750.0
+CLKOUT0_DIVIDE_F =       2
+CLKOUT1_DIVIDE   =       4
+CLKOUT2_DIVIDE   =      64
+CLKOUT3_DIVIDE   =      16
+CLKOUT0_PERIOD   =    1500
+CLKOUT1_PERIOD   =    3000
+CLKOUT2_PERIOD   =   48000
+CLKOUT3_PERIOD   =   12000
+CLKOUT4_PERIOD   =    6000
+############################################################
+
+############# MMCME2_ADV Parameters #############
+
+MMCM_MULT_F           =           8
+MMCM_VCO_FREQ (MHz)   = 666.000
+MMCM_VCO_PERIOD       = 1501.502
+#################################################
+
+testbench.d3.mig_gen.gen_mig.ddrc.MCB_inst.u_mig_mig.u_memc_ui_top_std.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : BYTE_LANES_B0 = f BYTE_LANES_B1 = 0 DATA_CTL_B0 = c DATA_CTL_B1 = 0
+testbench.d3.mig_gen.gen_mig.ddrc.MCB_inst.u_mig_mig.u_memc_ui_top_std.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : HIGHEST_LANE =           4 HIGHEST_LANE_B0 =           4 HIGHEST_LANE_B1 =           0
+testbench.d3.mig_gen.gen_mig.ddrc.MCB_inst.u_mig_mig.u_memc_ui_top_std.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : HIGHEST_BANK =           1
+testbench.d3.mig_gen.gen_mig.ddrc.MCB_inst.u_mig_mig.u_memc_ui_top_std.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : FREQ_REF_PERIOD         = 1500.00 
+testbench.d3.mig_gen.gen_mig.ddrc.MCB_inst.u_mig_mig.u_memc_ui_top_std.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : DDR_TCK                 = 3000 
+testbench.d3.mig_gen.gen_mig.ddrc.MCB_inst.u_mig_mig.u_memc_ui_top_std.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PO_S2_TAPS_SIZE         = 11.72 
+testbench.d3.mig_gen.gen_mig.ddrc.MCB_inst.u_mig_mig.u_memc_ui_top_std.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PO_CIRC_BUF_EARLY       = 1 
+testbench.d3.mig_gen.gen_mig.ddrc.MCB_inst.u_mig_mig.u_memc_ui_top_std.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PO_CIRC_BUF_OFFSET      = 1557.90 
+testbench.d3.mig_gen.gen_mig.ddrc.MCB_inst.u_mig_mig.u_memc_ui_top_std.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PO_CIRC_BUF_META_ZONE   = 200.00 
+testbench.d3.mig_gen.gen_mig.ddrc.MCB_inst.u_mig_mig.u_memc_ui_top_std.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PO_STG2_FINE_INTR_DLY   = 874.70 
+testbench.d3.mig_gen.gen_mig.ddrc.MCB_inst.u_mig_mig.u_memc_ui_top_std.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PO_STG2_COARSE_INTR_DLY = 567.40 
+testbench.d3.mig_gen.gen_mig.ddrc.MCB_inst.u_mig_mig.u_memc_ui_top_std.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PO_STG2_INTRINSIC_DELAY = 1442.10 
+testbench.d3.mig_gen.gen_mig.ddrc.MCB_inst.u_mig_mig.u_memc_ui_top_std.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PO_CIRC_BUF_DELAY       = 60 
+testbench.d3.mig_gen.gen_mig.ddrc.MCB_inst.u_mig_mig.u_memc_ui_top_std.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PO_INTRINSIC_DELAY      = 1442.10 
+testbench.d3.mig_gen.gen_mig.ddrc.MCB_inst.u_mig_mig.u_memc_ui_top_std.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PO_DELAY                = 2145.22 
+testbench.d3.mig_gen.gen_mig.ddrc.MCB_inst.u_mig_mig.u_memc_ui_top_std.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PO_OCLK_DELAY           = 0 
+testbench.d3.mig_gen.gen_mig.ddrc.MCB_inst.u_mig_mig.u_memc_ui_top_std.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : L_PHY_0_PO_FINE_DELAY   = 60 
+testbench.d3.mig_gen.gen_mig.ddrc.MCB_inst.u_mig_mig.u_memc_ui_top_std.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PI_STG1_INTRINSIC_DELAY = 0.00 
+testbench.d3.mig_gen.gen_mig.ddrc.MCB_inst.u_mig_mig.u_memc_ui_top_std.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PI_STG2_INTRINSIC_DELAY = 849.45 
+testbench.d3.mig_gen.gen_mig.ddrc.MCB_inst.u_mig_mig.u_memc_ui_top_std.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PI_INTRINSIC_DELAY      = 849.45 
+testbench.d3.mig_gen.gen_mig.ddrc.MCB_inst.u_mig_mig.u_memc_ui_top_std.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PI_MAX_STG2_DELAY       = 738.28 
+testbench.d3.mig_gen.gen_mig.ddrc.MCB_inst.u_mig_mig.u_memc_ui_top_std.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PI_OFFSET               = 96.00 
+testbench.d3.mig_gen.gen_mig.ddrc.MCB_inst.u_mig_mig.u_memc_ui_top_std.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PI_STG2_DELAY           = 96.00 
+testbench.d3.mig_gen.gen_mig.ddrc.MCB_inst.u_mig_mig.u_memc_ui_top_std.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy :PI_STG2_DELAY_CAND       = 96.00 
+testbench.d3.mig_gen.gen_mig.ddrc.MCB_inst.u_mig_mig.u_memc_ui_top_std.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : DEFAULT_RCLK_DELAY      = 8 
+testbench.d3.mig_gen.gen_mig.ddrc.MCB_inst.u_mig_mig.u_memc_ui_top_std.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : RCLK_SELECT_EDGE        = 111 
+LEON3 Demonstration design for Digilent Arty A7 board, 83 MHz
+GRLIB Version 2022.4.0, build 4280
+Target technology: artix7    , memory library: artix7    
+ahbctrl: AHB arbiter/multiplexer rev 1
+ahbctrl: Common I/O area at 0xfff00000, 1 Mbyte
+ahbctrl: AHB masters: 3, AHB slaves: 8
+ahbctrl: Configuration area at 0xfffff000, 4 kbyte
+ahbctrl: mst0: Cobham Gaisler          LEON3 SPARC V8 Processor        
+ahbctrl: mst1: Cobham Gaisler          JTAG Debug Link                 
+ahbctrl: mst2: Cobham Gaisler          GR Ethernet MAC                 
+ahbctrl: slv0: Cobham Gaisler          SPI Memory Controller           
+ahbctrl:       I/O port at 0xfff00000, size 512kbyte
+ahbctrl:       memory at 0x00000000, size 512 Mbyte, cacheable, prefetch
+ahbctrl: slv1: Cobham Gaisler          AHB/APB Bridge                  
+ahbctrl:       memory at 0x80000000, size 1 Mbyte
+ahbctrl: slv2: Cobham Gaisler          LEON3 Debug Support Unit        
+ahbctrl:       memory at 0x90000000, size 256 Mbyte
+ahbctrl: slv4: Cobham Gaisler          Test report module              
+ahbctrl:       memory at 0x20000000, size 1 Mbyte
+ahbctrl: slv5: Cobham Gaisler          Xilinx MIG Controller           
+ahbctrl:       memory at 0x40000000, size 256 Mbyte, cacheable, prefetch
+apbctrl: APB Bridge at 0x80000000 rev 1
+apbctrl: slv1: Cobham Gaisler          Generic UART                    
+apbctrl:       I/O ports at 0x80000100, size 256 byte 
+apbctrl: slv2: Cobham Gaisler          Multi-processor Interrupt Ctrl. 
+apbctrl:       I/O ports at 0x80000200, size 256 byte 
+apbctrl: slv3: Cobham Gaisler          Modular Timer Unit              
+apbctrl:       I/O ports at 0x80000300, size 256 byte 
+apbctrl: slv4: Cobham Gaisler          AMBA Wrapper for OC I2C-master  
+apbctrl:       I/O ports at 0x80000400, size 256 byte 
+apbctrl: slv5: Cobham Gaisler          Xilinx MIG Controller           
+apbctrl:       I/O ports at 0x80000500, size 256 byte 
+apbctrl: slv6: Cobham Gaisler          SPI Controller                  
+apbctrl:       I/O ports at 0x80000600, size 256 byte 
+apbctrl: slv9: Cobham Gaisler          General Purpose I/O port        
+apbctrl:       I/O ports at 0x80000900, size 256 byte 
+apbctrl: slv10: Cobham Gaisler          General Purpose I/O port        
+apbctrl:       I/O ports at 0x80000a00, size 256 byte 
+apbctrl: slv11: Cobham Gaisler          General Purpose I/O port        
+apbctrl:       I/O ports at 0x80000b00, size 256 byte 
+apbctrl: slv15: Cobham Gaisler          GR Ethernet MAC                 
+apbctrl:       I/O ports at 0x80000f00, size 256 byte 
+greth2: 10/100 Mbit Ethernet MAC rev 02, EDCL 1, buffer 16 kbyte 256 txfifo, irq 12
+grgpio11: 20-bit GPIO Unit rev 3
+grgpio10: 32-bit GPIO Unit rev 3
+grgpio9: 20-bit GPIO Unit rev 3
+apbuart1: Generic UART rev 1, fifo 32, irq 2, scaler bits 12
+spictrl6: SPI controller, rev 6, irq 5
+i2cmst4: AMBA Wrapper for OC I2C-master rev 3, irq 3
+gptimer3: Timer Unit rev 1, 8-bit scaler, 2 32-bit timers, irq 8
+irqmp: Multi-processor Interrupt Controller rev 4, #cpu 1, eirq 0
+spimctrl0: SPI memory controller rev 2, irq 10
+ahbjtag AHB Debug JTAG rev 2
+dsu3_2: LEON3 Debug support unit + AHB Trace Buffer, 16 kbytes
+leon3_0: LEON3 SPARC V8 processor rev 3: iuft: 0, fpft: 0, cacheft: 0
+leon3_0: icache 2*16 kbyte, dcache 2*16 kbyte
+testmod4: Test report module

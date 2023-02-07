@@ -1,0 +1,12 @@
+
+{ 
+    crc :  3842450399813337126  , 
+    ccp_crc :  0  , 
+    cmdline : " -wto bdd47f0d299f49108c3dd61141ae523f --incr --debug typical --relax --mt 8 -L xil_defaultlib -L grlib -L techmap -L gaisler -L eth -L opencores -L work -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot testbench_behav work.testbench work.glbl" , 
+    buildDate : "May 24 2019" , 
+    buildTime : "14:51:52" , 
+    linkCmd : "/usr/bin/gcc -Wa,-W  -O -fPIC  -m64  -Wl,--no-as-needed  -Wl,--unresolved-symbols=ignore-all  -o \"xsim.dir/testbench_behav/xsimk\"   \"xsim.dir/testbench_behav/obj/xsim_0.lnx64.o\" \"xsim.dir/testbench_behav/obj/xsim_1.lnx64.o\" \"xsim.dir/testbench_behav/obj/xsim_2.lnx64.o\" \"xsim.dir/testbench_behav/obj/xsim_3.lnx64.o\" \"xsim.dir/testbench_behav/obj/xsim_4.lnx64.o\" \"xsim.dir/testbench_behav/obj/xsim_5.lnx64.o\" \"xsim.dir/testbench_behav/obj/xsim_6.lnx64.o\" \"xsim.dir/testbench_behav/obj/xsim_7.lnx64.o\" \"xsim.dir/testbench_behav/obj/xsim_8.lnx64.o\" \"xsim.dir/testbench_behav/obj/xsim_9.lnx64.o\" \"xsim.dir/testbench_behav/obj/xsim_10.lnx64.o\" \"xsim.dir/testbench_behav/obj/xsim_11.lnx64.o\" \"xsim.dir/testbench_behav/obj/xsim_12.lnx64.o\" \"xsim.dir/testbench_behav/obj/xsim_13.lnx64.o\" \"xsim.dir/testbench_behav/obj/xsim_14.lnx64.o\" \"xsim.dir/testbench_behav/obj/xsim_15.lnx64.o\" -L\"/opt/Xilinx/Vivado/2019.1/lib/lnx64.o\" -lrdi_simulator_kernel   -lrdi_simbridge_kernel" , 
+    aggregate_nets : 
+    [ 
+    ] 
+} 

@@ -1,0 +1,1152 @@
+
+*** Running vivado
+    with args -log noelvmp.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source noelvmp.tcl -notrace
+
+
+****** Vivado v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source noelvmp.tcl -notrace
+Command: link_design -top noelvmp -part xc7a100ticsg324-1L
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xc7a100ticsg324-1L
+INFO: [Netlist 29-17] Analyzing 2493 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+CRITICAL WARNING: [Designutils 20-1281] Could not find module 'mig'. The XDC file /home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/designs/noelv-digilent-arty-a7-study/vivado/noelv-digilent-arty-a7/noelv-digilent-arty-a7.srcs/sources_1/ip/mig/mig/user_design/constraints/mig.xdc will not be read for this module.
+Parsing XDC File [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc]
+WARNING: [Vivado 12-508] No pins matched 'ahbjtaggen0.ahbjtag0/tap0/ac7v.u0/u0/TCK'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:9]
+CRITICAL WARNING: [Vivado 12-4739] create_clock:No valid object(s) found for '-objects [get_pins ahbjtaggen0.ahbjtag0/tap0/ac7v.u0/u0/TCK]'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:9]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+INFO: [Timing 38-35] Done setting XDC timing constraints. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:12]
+INFO: [Timing 38-2] Deriving generated clocks [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:12]
+WARNING: [Vivado 12-627] No clocks matched 'ahbjtaggen0.ahbjtag0/tap0/ac7v.u0/lltck'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:12]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:12]
+CRITICAL WARNING: [Vivado 12-4739] set_clock_groups:No valid object(s) found for '-group [get_clocks ahbjtaggen0.ahbjtag0/tap0/ac7v.u0/lltck]'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:12]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Vivado 12-5201] set_clock_groups: cannot set the clock group when only one non-empty group remains. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:12]
+WARNING: [Vivado 12-627] No clocks matched 'clk_pll_i'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:17]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:17]
+CRITICAL WARNING: [Vivado 12-4739] set_clock_groups:No valid object(s) found for '-group [get_clocks clk_pll_i]'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:17]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Vivado 12-5201] set_clock_groups: cannot set the clock group when only one non-empty group remains. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:17]
+WARNING: [Vivado 12-627] No clocks matched 'clk_pll_i'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:18]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:18]
+CRITICAL WARNING: [Vivado 12-4739] set_clock_groups:No valid object(s) found for '-group [get_clocks clk_pll_i]'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:18]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Vivado 12-5201] set_clock_groups: cannot set the clock group when only one non-empty group remains. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:18]
+WARNING: [Vivado 12-627] No clocks matched 'clk_pll_i'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:19]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:19]
+CRITICAL WARNING: [Vivado 12-4739] set_clock_groups:No valid object(s) found for '-group [get_clocks clk_pll_i]'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:19]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Vivado 12-5201] set_clock_groups: cannot set the clock group when only one non-empty group remains. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:19]
+WARNING: [Vivado 12-627] No clocks matched 'clk_pll_i'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:20]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:20]
+CRITICAL WARNING: [Vivado 12-4739] set_clock_groups:No valid object(s) found for '-group [get_clocks clk_pll_i]'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:20]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Vivado 12-5201] set_clock_groups: cannot set the clock group when only one non-empty group remains. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:20]
+WARNING: [Vivado 12-627] No clocks matched 'clk_pll_i'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:21]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:21]
+CRITICAL WARNING: [Vivado 12-4739] set_clock_groups:No valid object(s) found for '-group [get_clocks clk_pll_i]'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:21]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Vivado 12-5201] set_clock_groups: cannot set the clock group when only one non-empty group remains. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:21]
+WARNING: [Vivado 12-627] No clocks matched 'clk_pll_i'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:22]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:22]
+CRITICAL WARNING: [Vivado 12-4739] set_clock_groups:No valid object(s) found for '-group [get_clocks clk_pll_i]'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:22]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Vivado 12-5201] set_clock_groups: cannot set the clock group when only one non-empty group remains. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:22]
+WARNING: [Vivado 12-627] No clocks matched 'clk_pll_i'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:23]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:23]
+WARNING: [Vivado 12-627] No clocks matched 'ahbjtaggen0.ahbjtag0/tap0/ac7v.u0/lltck'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:23]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:23]
+CRITICAL WARNING: [Vivado 12-4739] set_clock_groups:No valid object(s) found for '-group [get_clocks clk_pll_i]'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:23]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Vivado 12-4739] set_clock_groups:No valid object(s) found for '-group [get_clocks ahbjtaggen0.ahbjtag0/tap0/ac7v.u0/lltck]'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:23]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Constraints 18-4644] set_clock_groups: All clock groups specified are empty. Please specify atleast one clock group which is not empty. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:23]
+WARNING: [Vivado 12-627] No clocks matched 'ahbjtaggen0.ahbjtag0/tap0/ac7v.u0/lltck'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:25]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:25]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_clocks ahbjtaggen0.ahbjtag0/tap0/ac7v.u0/lltck]'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:25]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-180] No cells matched 'ahbjtaggen0.ahbjtag0/newcom.jtagcom0/tnr1_reg[done_sync1]'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:28]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:28]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-180] No cells matched 'ahbjtaggen0.ahbjtag0/newcom.jtagcom0/tpr1_reg[done_sync]'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:29]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:29]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-180] No cells matched 'eth0.e1/m100.u0/ethc0/r_reg[rxstart][0]'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:30]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:30]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-180] No cells matched 'eth0.e1/m100.u0/ethc0/r_reg[rxstart][1]'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:31]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:31]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-180] No cells matched 'eth0.e1/m100.u0/ethc0/r_reg[rxwrite][0]'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:32]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:32]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-180] No cells matched 'eth0.e1/m100.u0/ethc0/r_reg[rxwrite][1]'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:33]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:33]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-180] No cells matched 'eth0.e1/m100.u0/ethc0/r_reg[rxdone][0]'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:34]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:34]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-180] No cells matched 'eth0.e1/m100.u0/ethc0/r_reg[rxdone][1]'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:35]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:35]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-180] No cells matched 'eth0.e1/m100.u0/ethc0/r_reg[txread][0]'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:36]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:36]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-180] No cells matched 'eth0.e1/m100.u0/ethc0/r_reg[txread][1]'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:37]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:37]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-180] No cells matched 'eth0.e1/m100.u0/ethc0/r_reg[txrestart][0]'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:38]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:38]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-180] No cells matched 'eth0.e1/m100.u0/ethc0/r_reg[txrestart][1]'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:39]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:39]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-180] No cells matched 'eth0.e1/m100.u0/ethc0/r_reg[txdone][0]'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:40]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:40]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-180] No cells matched 'eth0.e1/m100.u0/ethc0/r_reg[txdone][1]'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:41]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:41]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-180] No cells matched 'eth0.e1/m100.u0/ethc0/rx_rmii0.rx0/gmiimode0.r_reg[write_ack][0]'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:42]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:42]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-180] No cells matched 'eth0.e1/m100.u0/ethc0/rx_rmii0.rx0/gmiimode0.r_reg[write_ack][1]'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:43]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:43]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-180] No cells matched 'eth0.e1/m100.u0/ethc0/rx_rmii0.rx0/gmiimode0.r_reg[done_ack][0]'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:44]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:44]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-180] No cells matched 'eth0.e1/m100.u0/ethc0/rx_rmii0.rx0/gmiimode0.r_reg[done_ack][1]'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:45]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:45]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-180] No cells matched 'eth0.e1/m100.u0/ethc0/rx_rmii0.rx0/rx_rst/r_reg[0]'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:46]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:46]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-180] No cells matched 'eth0.e1/m100.u0/ethc0/rx_rmii0.rx0/rx_rst/r_reg[2]'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:47]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:47]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-180] No cells matched 'eth0.e1/m100.u0/ethc0/tx_rmii0.tx0/gmiimode0.r_reg[fullduplex][0]'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:48]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:48]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-180] No cells matched 'eth0.e1/m100.u0/ethc0/tx_rmii0.tx0/gmiimode0.r_reg[fullduplex][1]'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:49]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:49]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-180] No cells matched 'eth0.e1/m100.u0/ethc0/tx_rmii0.tx0/tx_rst/r_reg[0]'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:50]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:50]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-180] No cells matched 'eth0.e1/m100.u0/ethc0/tx_rmii0.tx0/tx_rst/r_reg[2]'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:51]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:51]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-180] No cells matched 'eth0.e1/m100.u0/ethc0/tx_rmii0.tx0/gmiimode0.r_reg[start][0]'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:52]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:52]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-180] No cells matched 'eth0.e1/m100.u0/ethc0/tx_rmii0.tx0/gmiimode0.r_reg[start][1]'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:53]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:53]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-180] No cells matched 'eth0.e1/m100.u0/ethc0/tx_rmii0.tx0/gmiimode0.r_reg[read_ack][0]'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:54]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:54]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-180] No cells matched 'eth0.e1/m100.u0/ethc0/tx_rmii0.tx0/gmiimode0.r_reg[read_ack][1]'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:55]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:55]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led0_b'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:64]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:64]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led0_g'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:65]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:65]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led0_r'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:66]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:66]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led1_b'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:67]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:67]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led1_g'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:68]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:68]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led1_r'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:69]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:69]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led2_b'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:70]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:70]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led2_g'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:71]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:71]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led2_r'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:72]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:72]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led3_b'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:73]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:73]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led3_g'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:74]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:74]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led3_r'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:75]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:75]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jb[0]'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:100]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:100]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jb[1]'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:101]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:101]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jb[2]'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:102]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:102]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jb[3]'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:103]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:103]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jb[4]'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:104]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:104]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jb[5]'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:105]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:105]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jb[6]'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:106]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:106]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jb[7]'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:107]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:107]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jc[0]'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:110]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:110]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jc[1]'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:111]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:111]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jc[2]'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:112]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:112]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jc[3]'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:113]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:113]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jc[4]'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:114]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:114]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jc[5]'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:115]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:115]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jc[6]'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:116]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:116]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jc[7]'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:117]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:117]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jd[0]'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:120]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:120]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jd[1]'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:121]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:121]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jd[2]'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:122]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:122]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jd[3]'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:123]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:123]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jd[4]'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:124]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:124]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jd[5]'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:125]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:125]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jd[6]'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:126]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:126]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jd[7]'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:127]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:127]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ck_io[0]'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:134]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:134]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ck_io[1]'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:135]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:135]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ck_io[2]'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:136]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:136]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ck_io[3]'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:137]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:137]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ck_io[4]'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:138]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:138]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ck_io[5]'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:139]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:139]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ck_io[6]'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:140]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:140]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ck_io[7]'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:141]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:141]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ck_io[8]'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:142]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:142]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ck_io[9]'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:143]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:143]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ck_io[10]'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:144]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:144]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ck_io[11]'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:145]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:145]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ck_io[12]'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:146]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:146]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ck_io[13]'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:147]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:147]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ck_a[0]'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:185]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:185]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ck_a[1]'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:186]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:186]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ck_a[2]'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:187]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:187]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ck_a[3]'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:188]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:188]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ck_a[4]'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:189]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:189]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ck_a[5]'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:190]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:190]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ck_miso'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:212]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:212]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ck_mosi'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:213]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:213]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ck_sck'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:214]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:214]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ck_ss'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:215]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:215]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ck_scl'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:218]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:218]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ck_sda'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:219]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:219]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ck_rst'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:225]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:225]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'qspi_sck'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:249]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:249]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'qspi_cs'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:250]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:250]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'qspi_dq[0]'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:251]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:251]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'qspi_dq[1]'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:252]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc:252]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/Arty-XC7A100TI.xdc]
+Parsing XDC File [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/voltage_config.xdc]
+Finished Parsing XDC File [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/voltage_config.xdc]
+Parsing XDC File [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/mig-XC7A100TI/mig-XC7A100TI.xdc]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_ck_n[*]'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/mig-XC7A100TI/mig-XC7A100TI.xdc:26]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/mig-XC7A100TI/mig-XC7A100TI.xdc:26]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr3_ck_p[*]'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/mig-XC7A100TI/mig-XC7A100TI.xdc:27]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/mig-XC7A100TI/mig-XC7A100TI.xdc:27]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[0]'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/mig-XC7A100TI/mig-XC7A100TI.xdc:37]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/mig-XC7A100TI/mig-XC7A100TI.xdc:37]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[0]'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/mig-XC7A100TI/mig-XC7A100TI.xdc:38]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/mig-XC7A100TI/mig-XC7A100TI.xdc:38]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[0]'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/mig-XC7A100TI/mig-XC7A100TI.xdc:39]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/mig-XC7A100TI/mig-XC7A100TI.xdc:39]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+INFO: [Common 17-14] Message 'Common 17-55' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/mig-XC7A100TI/mig-XC7A100TI.xdc:39]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[0]'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/mig-XC7A100TI/mig-XC7A100TI.xdc:40]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[1]'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/mig-XC7A100TI/mig-XC7A100TI.xdc:43]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[1]'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/mig-XC7A100TI/mig-XC7A100TI.xdc:44]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[1]'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/mig-XC7A100TI/mig-XC7A100TI.xdc:45]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[1]'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/mig-XC7A100TI/mig-XC7A100TI.xdc:46]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[2]'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/mig-XC7A100TI/mig-XC7A100TI.xdc:49]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[2]'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/mig-XC7A100TI/mig-XC7A100TI.xdc:50]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[2]'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/mig-XC7A100TI/mig-XC7A100TI.xdc:51]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[2]'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/mig-XC7A100TI/mig-XC7A100TI.xdc:52]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[3]'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/mig-XC7A100TI/mig-XC7A100TI.xdc:55]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[3]'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/mig-XC7A100TI/mig-XC7A100TI.xdc:56]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[3]'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/mig-XC7A100TI/mig-XC7A100TI.xdc:57]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[3]'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/mig-XC7A100TI/mig-XC7A100TI.xdc:58]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[4]'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/mig-XC7A100TI/mig-XC7A100TI.xdc:61]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[4]'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/mig-XC7A100TI/mig-XC7A100TI.xdc:62]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[4]'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/mig-XC7A100TI/mig-XC7A100TI.xdc:63]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[4]'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/mig-XC7A100TI/mig-XC7A100TI.xdc:64]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[5]'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/mig-XC7A100TI/mig-XC7A100TI.xdc:67]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[5]'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/mig-XC7A100TI/mig-XC7A100TI.xdc:68]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[5]'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/mig-XC7A100TI/mig-XC7A100TI.xdc:69]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[5]'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/mig-XC7A100TI/mig-XC7A100TI.xdc:70]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[6]'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/mig-XC7A100TI/mig-XC7A100TI.xdc:73]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[6]'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/mig-XC7A100TI/mig-XC7A100TI.xdc:74]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[6]'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/mig-XC7A100TI/mig-XC7A100TI.xdc:75]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[6]'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/mig-XC7A100TI/mig-XC7A100TI.xdc:76]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[7]'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/mig-XC7A100TI/mig-XC7A100TI.xdc:79]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[7]'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/mig-XC7A100TI/mig-XC7A100TI.xdc:80]
+WARNING: [Vivado 12-584] No ports matched 'ddr3_dq[7]'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/mig-XC7A100TI/mig-XC7A100TI.xdc:81]
+INFO: [Common 17-14] Message 'Vivado 12-584' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/mig-XC7A100TI/mig-XC7A100TI.xdc:81]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {NAME =~ */ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_B.ddr_byte_lane_B/phaser_out}'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/mig-XC7A100TI/mig-XC7A100TI.xdc:299]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {NAME =~ */ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_A.ddr_byte_lane_A/phaser_out}'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/mig-XC7A100TI/mig-XC7A100TI.xdc:300]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {NAME =~ */ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/phaser_out}'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/mig-XC7A100TI/mig-XC7A100TI.xdc:301]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {NAME =~ */ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/phaser_out}'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/mig-XC7A100TI/mig-XC7A100TI.xdc:302]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {NAME =~ */ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/phaser_in_gen.phaser_in}'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/mig-XC7A100TI/mig-XC7A100TI.xdc:306]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {NAME =~ */ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/phaser_in_gen.phaser_in}'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/mig-XC7A100TI/mig-XC7A100TI.xdc:307]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {NAME =~ */ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_B.ddr_byte_lane_B/out_fifo}'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/mig-XC7A100TI/mig-XC7A100TI.xdc:311]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {NAME =~ */ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_A.ddr_byte_lane_A/out_fifo}'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/mig-XC7A100TI/mig-XC7A100TI.xdc:312]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {NAME =~ */ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/out_fifo}'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/mig-XC7A100TI/mig-XC7A100TI.xdc:313]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {NAME =~ */ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/out_fifo}'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/mig-XC7A100TI/mig-XC7A100TI.xdc:314]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {NAME =~ */ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/in_fifo_gen.in_fifo}'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/mig-XC7A100TI/mig-XC7A100TI.xdc:316]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {NAME =~ */ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/in_fifo_gen.in_fifo}'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/mig-XC7A100TI/mig-XC7A100TI.xdc:317]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {NAME =~ */ddr_phy_4lanes_0.u_ddr_phy_4lanes/phy_control_i}'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/mig-XC7A100TI/mig-XC7A100TI.xdc:319]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {NAME =~ */ddr_phy_4lanes_0.u_ddr_phy_4lanes/phaser_ref_i}'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/mig-XC7A100TI/mig-XC7A100TI.xdc:321]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {NAME =~ */ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/ddr_byte_group_io/*slave_ts}'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/mig-XC7A100TI/mig-XC7A100TI.xdc:323]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {NAME =~ */ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/ddr_byte_group_io/*slave_ts}'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/mig-XC7A100TI/mig-XC7A100TI.xdc:324]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {NAME =~ */u_ddr3_infrastructure/plle2_i}'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/mig-XC7A100TI/mig-XC7A100TI.xdc:326]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {NAME =~ */u_ddr3_infrastructure/gen_mmcm.mmcm_i}'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/mig-XC7A100TI/mig-XC7A100TI.xdc:327]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {NAME =~ */mc0/mc_read_idle_r_reg}'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/mig-XC7A100TI/mig-XC7A100TI.xdc:330]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {NAME =~ */input_[?].iserdes_dq_.iserdesdq}'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/mig-XC7A100TI/mig-XC7A100TI.xdc:330]
+CRITICAL WARNING: [Vivado 12-4739] set_multicycle_path:No valid object(s) found for '-from [get_cells -hier -filter {NAME =~ */mc0/mc_read_idle_r_reg}]'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/mig-XC7A100TI/mig-XC7A100TI.xdc:330]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {NAME =~ */mc0/mc_read_idle_r_reg}'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/mig-XC7A100TI/mig-XC7A100TI.xdc:334]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {NAME =~ */input_[?].iserdes_dq_.iserdesdq}'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/mig-XC7A100TI/mig-XC7A100TI.xdc:334]
+CRITICAL WARNING: [Vivado 12-4739] set_multicycle_path:No valid object(s) found for '-from [get_cells -hier -filter {NAME =~ */mc0/mc_read_idle_r_reg}]'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/mig-XC7A100TI/mig-XC7A100TI.xdc:334]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {REF_NAME == PHASER_IN_PHY}'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/mig-XC7A100TI/mig-XC7A100TI.xdc:338]
+WARNING: [Vivado 12-508] No pins matched 'get_pins -filter {NAME =~ */DQSFOUND} -of [get_cells -hier -filter {REF_NAME == PHASER_IN_PHY}]'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/mig-XC7A100TI/mig-XC7A100TI.xdc:338]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-through [get_pins -filter {NAME =~ */DQSFOUND} -of [get_cells -hier -filter {REF_NAME == PHASER_IN_PHY}]]'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/mig-XC7A100TI/mig-XC7A100TI.xdc:338]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {REF_NAME == PHASER_OUT_PHY}'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/mig-XC7A100TI/mig-XC7A100TI.xdc:340]
+WARNING: [Vivado 12-508] No pins matched 'get_pins -filter {NAME =~ */OSERDESRST} -of [get_cells -hier -filter {REF_NAME == PHASER_OUT_PHY}]'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/mig-XC7A100TI/mig-XC7A100TI.xdc:340]
+CRITICAL WARNING: [Vivado 12-4739] set_multicycle_path:No valid object(s) found for '-through [get_pins -filter {NAME =~ */OSERDESRST} -of [get_cells -hier -filter {REF_NAME == PHASER_OUT_PHY}]]'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/mig-XC7A100TI/mig-XC7A100TI.xdc:340]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {REF_NAME == PHASER_OUT_PHY}'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/mig-XC7A100TI/mig-XC7A100TI.xdc:341]
+WARNING: [Vivado 12-508] No pins matched 'get_pins -filter {NAME =~ */OSERDESRST} -of [get_cells -hier -filter {REF_NAME == PHASER_OUT_PHY}]'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/mig-XC7A100TI/mig-XC7A100TI.xdc:341]
+CRITICAL WARNING: [Vivado 12-4739] set_multicycle_path:No valid object(s) found for '-through [get_pins -filter {NAME =~ */OSERDESRST} -of [get_cells -hier -filter {REF_NAME == PHASER_OUT_PHY}]]'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/mig-XC7A100TI/mig-XC7A100TI.xdc:341]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-508] No pins matched 'get_pins -hier -include_replicated_objects -filter {NAME =~ *temp_mon_enabled.u_tempmon/device_temp_sync_r1_reg[*]/D}'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/mig-XC7A100TI/mig-XC7A100TI.xdc:344]
+get_pins: Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 2519.531 ; gain = 63.289 ; free physical = 4863 ; free virtual = 45611
+CRITICAL WARNING: [Vivado 12-4739] set_max_delay:No valid object(s) found for '-to [get_pins -hier -include_replicated_objects -filter {NAME =~ *temp_mon_enabled.u_tempmon/device_temp_sync_r1_reg[*]/D}]'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/mig-XC7A100TI/mig-XC7A100TI.xdc:344]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-180] No cells matched '*rstdiv0_sync_r1_reg*'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/mig-XC7A100TI/mig-XC7A100TI.xdc:345]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {REF_NAME == PHY_CONTROL}'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/mig-XC7A100TI/mig-XC7A100TI.xdc:345]
+WARNING: [Vivado 12-508] No pins matched 'get_pins -filter {NAME =~ */RESET} -of [get_cells -hier -filter {REF_NAME == PHY_CONTROL}]'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/mig-XC7A100TI/mig-XC7A100TI.xdc:345]
+CRITICAL WARNING: [Vivado 12-4739] set_max_delay:No valid object(s) found for '-from [get_cells -hier *rstdiv0_sync_r1_reg*]'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/mig-XC7A100TI/mig-XC7A100TI.xdc:345]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-1023] No nets matched for command 'get_nets -hier -filter {NAME =~ */u_iodelay_ctrl/sys_rst_i}'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/mig-XC7A100TI/mig-XC7A100TI.xdc:347]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-through [get_nets -hier -filter {NAME =~ */u_iodelay_ctrl/sys_rst_i}]'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/mig-XC7A100TI/mig-XC7A100TI.xdc:347]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {NAME =~ *ddr3_infrastructure/rstdiv0_sync_r1_reg*}'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/mig-XC7A100TI/mig-XC7A100TI.xdc:349]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hier -filter {NAME =~ *temp_mon_enabled.u_tempmon/xadc_supplied_temperature.rst_r1*}'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/mig-XC7A100TI/mig-XC7A100TI.xdc:349]
+CRITICAL WARNING: [Vivado 12-4739] set_max_delay:No valid object(s) found for '-from [get_cells -hier -filter {NAME =~ *ddr3_infrastructure/rstdiv0_sync_r1_reg*}]'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/mig-XC7A100TI/mig-XC7A100TI.xdc:349]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+Finished Parsing XDC File [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/boards/digilent-arty-a7/mig-XC7A100TI/mig-XC7A100TI.xdc]
+Parsing XDC File [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/designs/noelv-digilent-arty-a7-study/noelvmp_jtag.xdc]
+WARNING: [Vivado 12-507] No nets matched 'rvjtag.tck_pad/xcv2.u0/ol'. [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/designs/noelv-digilent-arty-a7-study/noelvmp_jtag.xdc:1]
+Finished Parsing XDC File [/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/designs/noelv-digilent-arty-a7-study/noelvmp_jtag.xdc]
+CRITICAL WARNING: [Designutils 20-1280] Could not find module 'mig_cdc'. The XDC file /home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/designs/noelv-digilent-arty-a7-study/vivado/noelv-digilent-arty-a7/noelv-digilent-arty-a7.srcs/sources_1/ip/mig_cdc/mig_cdc_clocks.xdc will not be read for any cell of this module.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2536.203 ; gain = 0.000 ; free physical = 5032 ; free virtual = 45780
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 7 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 1 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 6 instances
+
+21 Infos, 175 Warnings, 130 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 2536.203 ; gain = 1148.746 ; free physical = 5032 ; free virtual = 45780
+Command: opt_design -directive Explore
+INFO: [Vivado_Tcl 4-136] Directive used for opt_design is: Explore
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a100ti'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a100ti'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.78 . Memory (MB): peak = 2600.234 ; gain = 64.031 ; free physical = 5022 ; free virtual = 45770
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: 13f4c0f51
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.79 . Memory (MB): peak = 2600.234 ; gain = 0.000 ; free physical = 4956 ; free virtual = 45704
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 44 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 68e43ddd
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 2600.234 ; gain = 0.000 ; free physical = 4928 ; free virtual = 45676
+INFO: [Opt 31-389] Phase Retarget created 4 cells and removed 98 cells
+INFO: [Opt 31-1021] In phase Retarget, 1 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 2 Constant propagation | Checksum: 9809d979
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 2600.234 ; gain = 0.000 ; free physical = 4911 ; free virtual = 45659
+INFO: [Opt 31-389] Phase Constant propagation created 15 cells and removed 72 cells
+
+Phase 3 Sweep
+Phase 3 Sweep | Checksum: c63a417d
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 2600.234 ; gain = 0.000 ; free physical = 4901 ; free virtual = 45649
+INFO: [Opt 31-389] Phase Sweep created 4 cells and removed 10 cells
+INFO: [Opt 31-1021] In phase Sweep, 2 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 4 BUFG optimization
+Phase 4 BUFG optimization | Checksum: c63a417d
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 2600.234 ; gain = 0.000 ; free physical = 4901 ; free virtual = 45649
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 5 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 5 Shift Register Optimization | Checksum: c63a417d
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 2600.234 ; gain = 0.000 ; free physical = 4901 ; free virtual = 45649
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 6 Post Processing Netlist
+Phase 6 Post Processing Netlist | Checksum: 13c3e5970
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 2600.234 ; gain = 0.000 ; free physical = 4901 ; free virtual = 45649
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |               4  |              98  |                                              1  |
+|  Constant propagation         |              15  |              72  |                                              0  |
+|  Sweep                        |               4  |              10  |                                              2  |
+|  BUFG optimization            |               0  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                              0  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00.12 ; elapsed = 00:00:00.12 . Memory (MB): peak = 2600.234 ; gain = 0.000 ; free physical = 4901 ; free virtual = 45649
+Ending Logic Optimization Task | Checksum: 134697c82
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:04 . Memory (MB): peak = 2600.234 ; gain = 0.000 ; free physical = 4901 ; free virtual = 45649
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=3.611 | TNS=0.000 |
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 18 BRAM(s) out of a total of 86 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 37 WE to EN ports
+Number of BRAM Ports augmented: 32 newly gated: 38 Total Ports: 172
+Ending PowerOpt Patch Enables Task | Checksum: d6ce498c
+
+Time (s): cpu = 00:00:00.33 ; elapsed = 00:00:00.34 . Memory (MB): peak = 3162.258 ; gain = 0.000 ; free physical = 4772 ; free virtual = 45523
+Ending Power Optimization Task | Checksum: d6ce498c
+
+Time (s): cpu = 00:00:39 ; elapsed = 00:00:22 . Memory (MB): peak = 3162.258 ; gain = 562.023 ; free physical = 4829 ; free virtual = 45580
+
+Starting Final Cleanup Task
+Ending Final Cleanup Task | Checksum: d6ce498c
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3162.258 ; gain = 0.000 ; free physical = 4829 ; free virtual = 45580
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 3162.258 ; gain = 0.000 ; free physical = 4829 ; free virtual = 45580
+Ending Netlist Obfuscation Task | Checksum: d41c4f7f
+
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 3162.258 ; gain = 0.000 ; free physical = 4829 ; free virtual = 45580
+INFO: [Common 17-83] Releasing license: Implementation
+47 Infos, 175 Warnings, 130 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:49 ; elapsed = 00:00:29 . Memory (MB): peak = 3162.258 ; gain = 626.055 ; free physical = 4829 ; free virtual = 45580
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3162.258 ; gain = 0.000 ; free physical = 4829 ; free virtual = 45580
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3162.258 ; gain = 0.000 ; free physical = 4829 ; free virtual = 45581
+INFO: [Common 17-1381] The checkpoint '/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/designs/noelv-digilent-arty-a7-study/vivado/noelv-digilent-arty-a7/noelv-digilent-arty-a7.runs/impl_1/noelvmp_opt.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 3162.258 ; gain = 0.000 ; free physical = 4823 ; free virtual = 45583
+INFO: [runtcl-4] Executing : report_drc -file noelvmp_drc_opted.rpt -pb noelvmp_drc_opted.pb -rpx noelvmp_drc_opted.rpx
+Command: report_drc -file noelvmp_drc_opted.rpt -pb noelvmp_drc_opted.pb -rpx noelvmp_drc_opted.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Coretcl 2-168] The results of DRC are in file /home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/designs/noelv-digilent-arty-a7-study/vivado/noelv-digilent-arty-a7/noelv-digilent-arty-a7.runs/impl_1/noelvmp_drc_opted.rpt.
+report_drc completed successfully
+Command: place_design -directive Explore
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a100ti'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a100ti'
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 46-5] The placer was invoked with the 'Explore' directive.
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 8 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3239.293 ; gain = 0.000 ; free physical = 4818 ; free virtual = 45578
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 6e93aab4
+
+Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.06 . Memory (MB): peak = 3239.293 ; gain = 0.000 ; free physical = 4818 ; free virtual = 45578
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3239.293 ; gain = 0.000 ; free physical = 4818 ; free virtual = 45578
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: ed1495a0
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:02 . Memory (MB): peak = 3239.293 ; gain = 0.000 ; free physical = 4767 ; free virtual = 45527
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: 1dbd13c47
+
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:08 . Memory (MB): peak = 3239.293 ; gain = 0.000 ; free physical = 4648 ; free virtual = 45408
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: 1dbd13c47
+
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:08 . Memory (MB): peak = 3239.293 ; gain = 0.000 ; free physical = 4648 ; free virtual = 45408
+Phase 1 Placer Initialization | Checksum: 1dbd13c47
+
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:08 . Memory (MB): peak = 3239.293 ; gain = 0.000 ; free physical = 4648 ; free virtual = 45408
+
+Phase 2 Global Placement
+
+Phase 2.1 Floorplanning
+Phase 2.1 Floorplanning | Checksum: 1b119963f
+
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:10 . Memory (MB): peak = 3239.293 ; gain = 0.000 ; free physical = 4563 ; free virtual = 45324
+
+Phase 2.2 Global Placement Core
+
+Phase 2.2.1 Physical Synthesis In Placer
+INFO: [Physopt 32-65] No nets found for high-fanout optimization.
+INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-670] No setup violation found.  DSP Register Optimization was not performed.
+INFO: [Physopt 32-670] No setup violation found.  Shift Register Optimization was not performed.
+INFO: [Physopt 32-670] No setup violation found.  BRAM Register Optimization was not performed.
+INFO: [Physopt 32-949] No candidate nets found for HD net replication
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3239.293 ; gain = 0.000 ; free physical = 4566 ; free virtual = 45327
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+----------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization                  |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+----------------------------------------------------------------------------------------------------------------------------------------
+|  Very High Fanout              |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  DSP Register                  |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  Shift Register                |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  BRAM Register                 |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  HD Interface Net Replication  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Total                         |            0  |              0  |                     0  |           0  |           2  |  00:00:00  |
+----------------------------------------------------------------------------------------------------------------------------------------
+
+
+Phase 2.2.1 Physical Synthesis In Placer | Checksum: 1e15f70c8
+
+Time (s): cpu = 00:01:24 ; elapsed = 00:00:34 . Memory (MB): peak = 3239.293 ; gain = 0.000 ; free physical = 4566 ; free virtual = 45326
+Phase 2.2 Global Placement Core | Checksum: 9149754d
+
+Time (s): cpu = 00:01:33 ; elapsed = 00:00:38 . Memory (MB): peak = 3239.293 ; gain = 0.000 ; free physical = 4554 ; free virtual = 45315
+Phase 2 Global Placement | Checksum: 9149754d
+
+Time (s): cpu = 00:01:33 ; elapsed = 00:00:38 . Memory (MB): peak = 3239.293 ; gain = 0.000 ; free physical = 4594 ; free virtual = 45355
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 11e40f63f
+
+Time (s): cpu = 00:01:40 ; elapsed = 00:00:40 . Memory (MB): peak = 3239.293 ; gain = 0.000 ; free physical = 4576 ; free virtual = 45337
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 17252cf99
+
+Time (s): cpu = 00:01:52 ; elapsed = 00:00:45 . Memory (MB): peak = 3239.293 ; gain = 0.000 ; free physical = 4572 ; free virtual = 45333
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: 191d63c92
+
+Time (s): cpu = 00:01:53 ; elapsed = 00:00:45 . Memory (MB): peak = 3239.293 ; gain = 0.000 ; free physical = 4573 ; free virtual = 45334
+
+Phase 3.4 Pipeline Register Optimization
+Phase 3.4 Pipeline Register Optimization | Checksum: 13d6a3f88
+
+Time (s): cpu = 00:01:53 ; elapsed = 00:00:45 . Memory (MB): peak = 3239.293 ; gain = 0.000 ; free physical = 4573 ; free virtual = 45334
+
+Phase 3.5 Fast Optimization
+Phase 3.5 Fast Optimization | Checksum: b93cf94f
+
+Time (s): cpu = 00:02:04 ; elapsed = 00:00:48 . Memory (MB): peak = 3239.293 ; gain = 0.000 ; free physical = 4588 ; free virtual = 45349
+
+Phase 3.6 Small Shape Detail Placement
+Phase 3.6 Small Shape Detail Placement | Checksum: 17679d435
+
+Time (s): cpu = 00:02:21 ; elapsed = 00:01:05 . Memory (MB): peak = 3239.293 ; gain = 0.000 ; free physical = 4512 ; free virtual = 45273
+
+Phase 3.7 Re-assign LUT pins
+Phase 3.7 Re-assign LUT pins | Checksum: 1cf17c2f6
+
+Time (s): cpu = 00:02:24 ; elapsed = 00:01:08 . Memory (MB): peak = 3239.293 ; gain = 0.000 ; free physical = 4517 ; free virtual = 45278
+
+Phase 3.8 Pipeline Register Optimization
+Phase 3.8 Pipeline Register Optimization | Checksum: 1481a7387
+
+Time (s): cpu = 00:02:24 ; elapsed = 00:01:08 . Memory (MB): peak = 3239.293 ; gain = 0.000 ; free physical = 4517 ; free virtual = 45278
+Phase 3 Detail Placement | Checksum: 1481a7387
+
+Time (s): cpu = 00:02:24 ; elapsed = 00:01:08 . Memory (MB): peak = 3239.293 ; gain = 0.000 ; free physical = 4517 ; free virtual = 45278
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+Post Placement Optimization Initialization | Checksum: eb45ccc3
+
+Phase 4.1.1.1 BUFG Insertion
+INFO: [Place 46-33] Processed net core0/noelv0/cpuloop[0].core/u0/iu0/clear, BUFG insertion was skipped due to placement/routing conflicts.
+INFO: [Place 46-33] Processed net core0/noelv0/cpuloop[0].core/u0/mmu0/dco[hold], BUFG insertion was skipped due to placement/routing conflicts.
+INFO: [Place 46-33] Processed net core0/noelv0/grplic0/SS[0], BUFG insertion was skipped due to placement/routing conflicts.
+INFO: [Place 46-56] BUFG insertion identified 3 candidate nets. Inserted BUFG: 0, Replicated BUFG Driver: 0, Skipped due to Placement/Routing Conflicts: 3, Skipped due to Timing Degradation: 0, Skipped due to Illegal Netlist: 0.
+Phase 4.1.1.1 BUFG Insertion | Checksum: eb45ccc3
+
+Time (s): cpu = 00:02:40 ; elapsed = 00:01:13 . Memory (MB): peak = 3239.293 ; gain = 0.000 ; free physical = 4558 ; free virtual = 45319
+INFO: [Place 30-746] Post Placement Timing Summary WNS=0.506. For the most accurate timing information please run report_timing.
+Phase 4.1.1 Post Placement Optimization | Checksum: 1d285645d
+
+Time (s): cpu = 00:02:42 ; elapsed = 00:01:15 . Memory (MB): peak = 3239.293 ; gain = 0.000 ; free physical = 4557 ; free virtual = 45317
+Phase 4.1 Post Commit Optimization | Checksum: 1d285645d
+
+Time (s): cpu = 00:02:42 ; elapsed = 00:01:15 . Memory (MB): peak = 3239.293 ; gain = 0.000 ; free physical = 4557 ; free virtual = 45317
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 1d285645d
+
+Time (s): cpu = 00:02:43 ; elapsed = 00:01:15 . Memory (MB): peak = 3239.293 ; gain = 0.000 ; free physical = 4557 ; free virtual = 45317
+
+Phase 4.3 Placer Reporting
+Phase 4.3 Placer Reporting | Checksum: 1d285645d
+
+Time (s): cpu = 00:02:43 ; elapsed = 00:01:15 . Memory (MB): peak = 3239.293 ; gain = 0.000 ; free physical = 4557 ; free virtual = 45317
+
+Phase 4.4 Final Placement Cleanup
+Netlist sorting complete. Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.02 . Memory (MB): peak = 3239.293 ; gain = 0.000 ; free physical = 4557 ; free virtual = 45317
+Phase 4.4 Final Placement Cleanup | Checksum: 252c5bcb4
+
+Time (s): cpu = 00:02:43 ; elapsed = 00:01:16 . Memory (MB): peak = 3239.293 ; gain = 0.000 ; free physical = 4557 ; free virtual = 45318
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 252c5bcb4
+
+Time (s): cpu = 00:02:44 ; elapsed = 00:01:16 . Memory (MB): peak = 3239.293 ; gain = 0.000 ; free physical = 4557 ; free virtual = 45318
+Ending Placer Task | Checksum: 161e0b0bb
+
+Time (s): cpu = 00:02:44 ; elapsed = 00:01:16 . Memory (MB): peak = 3239.293 ; gain = 0.000 ; free physical = 4557 ; free virtual = 45318
+INFO: [Common 17-83] Releasing license: Implementation
+78 Infos, 175 Warnings, 130 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:02:46 ; elapsed = 00:01:17 . Memory (MB): peak = 3239.293 ; gain = 0.000 ; free physical = 4632 ; free virtual = 45393
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 3239.293 ; gain = 0.000 ; free physical = 4632 ; free virtual = 45393
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:06 ; elapsed = 00:00:02 . Memory (MB): peak = 3239.293 ; gain = 0.000 ; free physical = 4525 ; free virtual = 45368
+INFO: [Common 17-1381] The checkpoint '/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/designs/noelv-digilent-arty-a7-study/vivado/noelv-digilent-arty-a7/noelv-digilent-arty-a7.runs/impl_1/noelvmp_placed.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:11 ; elapsed = 00:00:07 . Memory (MB): peak = 3239.293 ; gain = 0.000 ; free physical = 4611 ; free virtual = 45391
+INFO: [runtcl-4] Executing : report_io -file noelvmp_io_placed.rpt
+report_io: Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.12 . Memory (MB): peak = 3239.293 ; gain = 0.000 ; free physical = 4603 ; free virtual = 45382
+INFO: [runtcl-4] Executing : report_utilization -file noelvmp_utilization_placed.rpt -pb noelvmp_utilization_placed.pb
+INFO: [runtcl-4] Executing : report_control_sets -verbose -file noelvmp_control_sets_placed.rpt
+report_control_sets: Time (s): cpu = 00:00:00.49 ; elapsed = 00:00:00.53 . Memory (MB): peak = 3239.293 ; gain = 0.000 ; free physical = 4605 ; free virtual = 45385
+Command: phys_opt_design -directive Explore
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a100ti'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a100ti'
+INFO: [Vivado_Tcl 4-137] Directive used for phys_opt_design is: Explore
+INFO: [Vivado_Tcl 4-383] Design worst setup slack (WNS) is greater than or equal to 0.250 ns. Skipping all physical synthesis optimizations.
+INFO: [Vivado_Tcl 4-232] No setup violation found. The netlist was not modified.
+INFO: [Common 17-83] Releasing license: Implementation
+88 Infos, 175 Warnings, 130 Critical Warnings and 0 Errors encountered.
+phys_opt_design completed successfully
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3239.293 ; gain = 0.000 ; free physical = 4573 ; free virtual = 45353
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:06 ; elapsed = 00:00:02 . Memory (MB): peak = 3239.293 ; gain = 0.000 ; free physical = 4455 ; free virtual = 45317
+INFO: [Common 17-1381] The checkpoint '/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/designs/noelv-digilent-arty-a7-study/vivado/noelv-digilent-arty-a7/noelv-digilent-arty-a7.runs/impl_1/noelvmp_physopt.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:11 ; elapsed = 00:00:07 . Memory (MB): peak = 3239.293 ; gain = 0.000 ; free physical = 4555 ; free virtual = 45354
+Command: route_design -directive Explore -tns_cleanup
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a100ti'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a100ti'
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-270] Using Router directive 'Explore'.
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 8 CPUs
+Checksum: PlaceDB: c42fdc52 ConstDB: 0 ShapeSum: 9db0d469 RouteDB: 0
+
+Phase 1 Build RT Design
+Phase 1 Build RT Design | Checksum: 17fa7e3b9
+
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:12 . Memory (MB): peak = 3239.293 ; gain = 0.000 ; free physical = 4354 ; free virtual = 45152
+Post Restoration Checksum: NetGraph: 95b6579f NumContArr: e9f18c1a Constraints: 0 Timing: 0
+
+Phase 2 Router Initialization
+
+Phase 2.1 Create Timer
+Phase 2.1 Create Timer | Checksum: 17fa7e3b9
+
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:12 . Memory (MB): peak = 3239.293 ; gain = 0.000 ; free physical = 4357 ; free virtual = 45155
+
+Phase 2.2 Fix Topology Constraints
+Phase 2.2 Fix Topology Constraints | Checksum: 17fa7e3b9
+
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:13 . Memory (MB): peak = 3239.293 ; gain = 0.000 ; free physical = 4316 ; free virtual = 45114
+
+Phase 2.3 Pre Route Cleanup
+Phase 2.3 Pre Route Cleanup | Checksum: 17fa7e3b9
+
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:13 . Memory (MB): peak = 3239.293 ; gain = 0.000 ; free physical = 4316 ; free virtual = 45114
+ Number of Nodes with overlaps = 0
+
+Phase 2.4 Update Timing
+Phase 2.4 Update Timing | Checksum: 208865148
+
+Time (s): cpu = 00:00:40 ; elapsed = 00:00:20 . Memory (MB): peak = 3239.293 ; gain = 0.000 ; free physical = 4277 ; free virtual = 45076
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=1.347  | TNS=0.000  | WHS=-0.356 | THS=-233.398|
+
+Phase 2 Router Initialization | Checksum: 194a75f1b
+
+Time (s): cpu = 00:00:51 ; elapsed = 00:00:23 . Memory (MB): peak = 3239.293 ; gain = 0.000 ; free physical = 4275 ; free virtual = 45074
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0 %
+  Global Horizontal Routing Utilization  = 0 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 67465
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 67465
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+
+Phase 3 Initial Routing
+Phase 3 Initial Routing | Checksum: 1b981274d
+
+Time (s): cpu = 00:01:11 ; elapsed = 00:00:28 . Memory (MB): peak = 3239.293 ; gain = 0.000 ; free physical = 4253 ; free virtual = 45051
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 21350
+ Number of Nodes with overlaps = 4507
+ Number of Nodes with overlaps = 1419
+ Number of Nodes with overlaps = 628
+ Number of Nodes with overlaps = 192
+ Number of Nodes with overlaps = 68
+ Number of Nodes with overlaps = 30
+ Number of Nodes with overlaps = 8
+ Number of Nodes with overlaps = 5
+ Number of Nodes with overlaps = 5
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=1.217  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 4.1 Global Iteration 0 | Checksum: d9ac90ad
+
+Time (s): cpu = 00:03:49 ; elapsed = 00:01:21 . Memory (MB): peak = 3239.293 ; gain = 0.000 ; free physical = 4244 ; free virtual = 45044
+Phase 4 Rip-up And Reroute | Checksum: d9ac90ad
+
+Time (s): cpu = 00:03:49 ; elapsed = 00:01:21 . Memory (MB): peak = 3239.293 ; gain = 0.000 ; free physical = 4244 ; free virtual = 45044
+
+Phase 5 Delay and Skew Optimization
+
+Phase 5.1 TNS Cleanup
+
+Phase 5.1.1 Delay CleanUp
+
+Phase 5.1.1.1 Update Timing
+Phase 5.1.1.1 Update Timing | Checksum: 1057341c0
+
+Time (s): cpu = 00:03:53 ; elapsed = 00:01:22 . Memory (MB): peak = 3239.293 ; gain = 0.000 ; free physical = 4245 ; free virtual = 45045
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=1.224  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 5.1.1 Delay CleanUp | Checksum: 1057341c0
+
+Time (s): cpu = 00:03:53 ; elapsed = 00:01:22 . Memory (MB): peak = 3239.293 ; gain = 0.000 ; free physical = 4248 ; free virtual = 45048
+Phase 5.1 TNS Cleanup | Checksum: 1057341c0
+
+Time (s): cpu = 00:03:53 ; elapsed = 00:01:22 . Memory (MB): peak = 3239.293 ; gain = 0.000 ; free physical = 4248 ; free virtual = 45048
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: 1057341c0
+
+Time (s): cpu = 00:03:53 ; elapsed = 00:01:23 . Memory (MB): peak = 3239.293 ; gain = 0.000 ; free physical = 4248 ; free virtual = 45048
+Phase 5 Delay and Skew Optimization | Checksum: 1057341c0
+
+Time (s): cpu = 00:03:53 ; elapsed = 00:01:23 . Memory (MB): peak = 3239.293 ; gain = 0.000 ; free physical = 4248 ; free virtual = 45048
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: 12d28f5d8
+
+Time (s): cpu = 00:03:57 ; elapsed = 00:01:24 . Memory (MB): peak = 3239.293 ; gain = 0.000 ; free physical = 4248 ; free virtual = 45048
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=1.224  | TNS=0.000  | WHS=0.010  | THS=0.000  |
+
+Phase 6.1 Hold Fix Iter | Checksum: 11c3c19fa
+
+Time (s): cpu = 00:03:58 ; elapsed = 00:01:24 . Memory (MB): peak = 3239.293 ; gain = 0.000 ; free physical = 4248 ; free virtual = 45048
+Phase 6 Post Hold Fix | Checksum: 11c3c19fa
+
+Time (s): cpu = 00:03:58 ; elapsed = 00:01:25 . Memory (MB): peak = 3239.293 ; gain = 0.000 ; free physical = 4248 ; free virtual = 45048
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 24.6519 %
+  Global Horizontal Routing Utilization  = 29.4393 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Phase 7 Route finalize | Checksum: 140eff9aa
+
+Time (s): cpu = 00:03:58 ; elapsed = 00:01:25 . Memory (MB): peak = 3239.293 ; gain = 0.000 ; free physical = 4249 ; free virtual = 45049
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: 140eff9aa
+
+Time (s): cpu = 00:03:58 ; elapsed = 00:01:25 . Memory (MB): peak = 3239.293 ; gain = 0.000 ; free physical = 4248 ; free virtual = 45048
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: c77b38e7
+
+Time (s): cpu = 00:04:03 ; elapsed = 00:01:29 . Memory (MB): peak = 3239.293 ; gain = 0.000 ; free physical = 4246 ; free virtual = 45047
+
+Phase 10 Post Router Timing
+INFO: [Route 35-20] Post Routing Timing Summary | WNS=1.277  | TNS=0.000  | WHS=0.012  | THS=0.000  |
+
+INFO: [Route 35-61] The design met the timing requirement.
+Phase 10 Post Router Timing | Checksum: 711c87ae
+
+Time (s): cpu = 00:04:20 ; elapsed = 00:01:33 . Memory (MB): peak = 3239.293 ; gain = 0.000 ; free physical = 4219 ; free virtual = 45020
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:04:20 ; elapsed = 00:01:33 . Memory (MB): peak = 3239.293 ; gain = 0.000 ; free physical = 4389 ; free virtual = 45189
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+104 Infos, 175 Warnings, 130 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:04:23 ; elapsed = 00:01:35 . Memory (MB): peak = 3239.293 ; gain = 0.000 ; free physical = 4389 ; free virtual = 45189
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3239.293 ; gain = 0.000 ; free physical = 4389 ; free virtual = 45189
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:07 ; elapsed = 00:00:02 . Memory (MB): peak = 3239.293 ; gain = 0.000 ; free physical = 4256 ; free virtual = 45165
+INFO: [Common 17-1381] The checkpoint '/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/designs/noelv-digilent-arty-a7-study/vivado/noelv-digilent-arty-a7/noelv-digilent-arty-a7.runs/impl_1/noelvmp_routed.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:12 ; elapsed = 00:00:07 . Memory (MB): peak = 3239.293 ; gain = 0.000 ; free physical = 4356 ; free virtual = 45182
+INFO: [runtcl-4] Executing : report_drc -file noelvmp_drc_routed.rpt -pb noelvmp_drc_routed.pb -rpx noelvmp_drc_routed.rpx
+Command: report_drc -file noelvmp_drc_routed.rpt -pb noelvmp_drc_routed.pb -rpx noelvmp_drc_routed.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Coretcl 2-168] The results of DRC are in file /home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/designs/noelv-digilent-arty-a7-study/vivado/noelv-digilent-arty-a7/noelv-digilent-arty-a7.runs/impl_1/noelvmp_drc_routed.rpt.
+report_drc completed successfully
+report_drc: Time (s): cpu = 00:00:14 ; elapsed = 00:00:06 . Memory (MB): peak = 3269.539 ; gain = 30.246 ; free physical = 4323 ; free virtual = 45149
+INFO: [runtcl-4] Executing : report_methodology -file noelvmp_methodology_drc_routed.rpt -pb noelvmp_methodology_drc_routed.pb -rpx noelvmp_methodology_drc_routed.rpx
+Command: report_methodology -file noelvmp_methodology_drc_routed.rpt -pb noelvmp_methodology_drc_routed.pb -rpx noelvmp_methodology_drc_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 8 threads
+INFO: [Coretcl 2-1520] The results of Report Methodology are in file /home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/designs/noelv-digilent-arty-a7-study/vivado/noelv-digilent-arty-a7/noelv-digilent-arty-a7.runs/impl_1/noelvmp_methodology_drc_routed.rpt.
+report_methodology completed successfully
+report_methodology: Time (s): cpu = 00:00:23 ; elapsed = 00:00:06 . Memory (MB): peak = 3269.539 ; gain = 0.000 ; free physical = 4346 ; free virtual = 45172
+INFO: [runtcl-4] Executing : report_power -file noelvmp_power_routed.rpt -pb noelvmp_power_summary_routed.pb -rpx noelvmp_power_routed.rpx
+Command: report_power -file noelvmp_power_routed.rpt -pb noelvmp_power_summary_routed.pb -rpx noelvmp_power_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+116 Infos, 175 Warnings, 130 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+report_power: Time (s): cpu = 00:00:23 ; elapsed = 00:00:16 . Memory (MB): peak = 3269.539 ; gain = 0.000 ; free physical = 4304 ; free virtual = 45139
+INFO: [runtcl-4] Executing : report_route_status -file noelvmp_route_status.rpt -pb noelvmp_route_status.pb
+INFO: [runtcl-4] Executing : report_timing_summary -max_paths 10 -file noelvmp_timing_summary_routed.rpt -pb noelvmp_timing_summary_routed.pb -rpx noelvmp_timing_summary_routed.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1L, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+INFO: [runtcl-4] Executing : report_incremental_reuse -file noelvmp_incremental_reuse_routed.rpt
+INFO: [Vivado_Tcl 4-1062] Incremental flow is disabled. No incremental reuse Info to report.
+INFO: [runtcl-4] Executing : report_clock_utilization -file noelvmp_clock_utilization_routed.rpt
+INFO: [runtcl-4] Executing : report_bus_skew -warn_on_violation -file noelvmp_bus_skew_routed.rpt -pb noelvmp_bus_skew_routed.pb -rpx noelvmp_bus_skew_routed.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1L, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+Command: phys_opt_design -directive Explore
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a100ti'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a100ti'
+INFO: [Vivado_Tcl 4-241] Physical synthesis in post route mode ( 100.0% nets are fully routed)
+INFO: [Vivado_Tcl 4-137] Directive used for phys_opt_design is: Explore
+INFO: [Vivado_Tcl 4-383] Design worst setup slack (WNS) is greater than or equal to 0.000 ns. Skipping all physical synthesis optimizations.
+INFO: [Vivado_Tcl 4-232] No setup violation found. The netlist was not modified.
+INFO: [Common 17-83] Releasing license: Implementation
+132 Infos, 175 Warnings, 130 Critical Warnings and 0 Errors encountered.
+phys_opt_design completed successfully
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3269.539 ; gain = 0.000 ; free physical = 4291 ; free virtual = 45126
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:07 ; elapsed = 00:00:02 . Memory (MB): peak = 3269.539 ; gain = 0.000 ; free physical = 4153 ; free virtual = 45097
+INFO: [Common 17-1381] The checkpoint '/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/designs/noelv-digilent-arty-a7-study/vivado/noelv-digilent-arty-a7/noelv-digilent-arty-a7.runs/impl_1/noelvmp_postroute_physopt.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:11 ; elapsed = 00:00:07 . Memory (MB): peak = 3269.539 ; gain = 0.000 ; free physical = 4265 ; free virtual = 45127
+INFO: [runtcl-4] Executing : report_timing_summary -max_paths 10 -warn_on_violation -file noelvmp_timing_summary_postroute_physopted.rpt -pb noelvmp_timing_summary_postroute_physopted.pb -rpx noelvmp_timing_summary_postroute_physopted.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1L, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+INFO: [runtcl-4] Executing : report_bus_skew -warn_on_violation -file noelvmp_bus_skew_postroute_physopted.rpt -pb noelvmp_bus_skew_postroute_physopted.pb -rpx noelvmp_bus_skew_postroute_physopted.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1L, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+Command: write_bitstream -force noelvmp.bit
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a100ti'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a100ti'
+Running DRC as a precondition to command write_bitstream
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 8 threads
+WARNING: [DRC DPIP-1] Input pipelining: DSP core0/noelv0/cpuloop[0].core/u0/fpu_gen.nano/p_0_out input core0/noelv0/cpuloop[0].core/u0/fpu_gen.nano/p_0_out/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP core0/noelv0/cpuloop[0].core/u0/fpu_gen.nano/p_0_out input core0/noelv0/cpuloop[0].core/u0/fpu_gen.nano/p_0_out/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP core0/noelv0/cpuloop[0].core/u0/fpu_gen.nano/srstregs.r_reg[mulo] input core0/noelv0/cpuloop[0].core/u0/fpu_gen.nano/srstregs.r_reg[mulo]/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP core0/noelv0/cpuloop[0].core/u0/mgen.mul0/m0/pipe2.arch0.dwm/ input core0/noelv0/cpuloop[0].core/u0/mgen.mul0/m0/pipe2.arch0.dwm//A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP core0/noelv0/cpuloop[0].core/u0/mgen.mul0/m0/pipe2.arch0.dwm/ input core0/noelv0/cpuloop[0].core/u0/mgen.mul0/m0/pipe2.arch0.dwm//B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP core0/noelv0/cpuloop[0].core/u0/mgen.mul0/m0/pipe2.arch0.dwm/__0 input core0/noelv0/cpuloop[0].core/u0/mgen.mul0/m0/pipe2.arch0.dwm/__0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP core0/noelv0/cpuloop[0].core/u0/mgen.mul0/m0/pipe2.arch0.dwm/__0 input core0/noelv0/cpuloop[0].core/u0/mgen.mul0/m0/pipe2.arch0.dwm/__0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP core0/noelv0/cpuloop[0].core/u0/mgen.mul0/m0/pipe2.arch0.dwm/__1 input core0/noelv0/cpuloop[0].core/u0/mgen.mul0/m0/pipe2.arch0.dwm/__1/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP core0/noelv0/cpuloop[0].core/u0/mgen.mul0/m0/pipe2.arch0.dwm/__1 input core0/noelv0/cpuloop[0].core/u0/mgen.mul0/m0/pipe2.arch0.dwm/__1/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP core0/noelv0/cpuloop[0].core/u0/mgen.mul0/m0/pipe2.arch0.dwm/__10 input core0/noelv0/cpuloop[0].core/u0/mgen.mul0/m0/pipe2.arch0.dwm/__10/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP core0/noelv0/cpuloop[0].core/u0/mgen.mul0/m0/pipe2.arch0.dwm/__10 input core0/noelv0/cpuloop[0].core/u0/mgen.mul0/m0/pipe2.arch0.dwm/__10/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP core0/noelv0/cpuloop[0].core/u0/mgen.mul0/m0/pipe2.arch0.dwm/__2 input core0/noelv0/cpuloop[0].core/u0/mgen.mul0/m0/pipe2.arch0.dwm/__2/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP core0/noelv0/cpuloop[0].core/u0/mgen.mul0/m0/pipe2.arch0.dwm/__2 input core0/noelv0/cpuloop[0].core/u0/mgen.mul0/m0/pipe2.arch0.dwm/__2/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP core0/noelv0/cpuloop[0].core/u0/mgen.mul0/m0/pipe2.arch0.dwm/__3 input core0/noelv0/cpuloop[0].core/u0/mgen.mul0/m0/pipe2.arch0.dwm/__3/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP core0/noelv0/cpuloop[0].core/u0/mgen.mul0/m0/pipe2.arch0.dwm/__3 input core0/noelv0/cpuloop[0].core/u0/mgen.mul0/m0/pipe2.arch0.dwm/__3/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP core0/noelv0/cpuloop[0].core/u0/mgen.mul0/m0/pipe2.arch0.dwm/__4 input core0/noelv0/cpuloop[0].core/u0/mgen.mul0/m0/pipe2.arch0.dwm/__4/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP core0/noelv0/cpuloop[0].core/u0/mgen.mul0/m0/pipe2.arch0.dwm/__4 input core0/noelv0/cpuloop[0].core/u0/mgen.mul0/m0/pipe2.arch0.dwm/__4/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP core0/noelv0/cpuloop[0].core/u0/mgen.mul0/m0/pipe2.arch0.dwm/__5 input core0/noelv0/cpuloop[0].core/u0/mgen.mul0/m0/pipe2.arch0.dwm/__5/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP core0/noelv0/cpuloop[0].core/u0/mgen.mul0/m0/pipe2.arch0.dwm/__5 input core0/noelv0/cpuloop[0].core/u0/mgen.mul0/m0/pipe2.arch0.dwm/__5/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP core0/noelv0/cpuloop[0].core/u0/mgen.mul0/m0/pipe2.arch0.dwm/__6 input core0/noelv0/cpuloop[0].core/u0/mgen.mul0/m0/pipe2.arch0.dwm/__6/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP core0/noelv0/cpuloop[0].core/u0/mgen.mul0/m0/pipe2.arch0.dwm/__6 input core0/noelv0/cpuloop[0].core/u0/mgen.mul0/m0/pipe2.arch0.dwm/__6/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP core0/noelv0/cpuloop[0].core/u0/mgen.mul0/m0/pipe2.arch0.dwm/__7 input core0/noelv0/cpuloop[0].core/u0/mgen.mul0/m0/pipe2.arch0.dwm/__7/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP core0/noelv0/cpuloop[0].core/u0/mgen.mul0/m0/pipe2.arch0.dwm/__7 input core0/noelv0/cpuloop[0].core/u0/mgen.mul0/m0/pipe2.arch0.dwm/__7/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP core0/noelv0/cpuloop[0].core/u0/mgen.mul0/m0/pipe2.arch0.dwm/__8 input core0/noelv0/cpuloop[0].core/u0/mgen.mul0/m0/pipe2.arch0.dwm/__8/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP core0/noelv0/cpuloop[0].core/u0/mgen.mul0/m0/pipe2.arch0.dwm/__8 input core0/noelv0/cpuloop[0].core/u0/mgen.mul0/m0/pipe2.arch0.dwm/__8/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP core0/noelv0/cpuloop[0].core/u0/mgen.mul0/m0/pipe2.arch0.dwm/__9 input core0/noelv0/cpuloop[0].core/u0/mgen.mul0/m0/pipe2.arch0.dwm/__9/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP core0/noelv0/cpuloop[0].core/u0/mgen.mul0/m0/pipe2.arch0.dwm/__9 input core0/noelv0/cpuloop[0].core/u0/mgen.mul0/m0/pipe2.arch0.dwm/__9/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP core0/noelv0/cpuloop[0].core/u0/mgen.mul0/m0/pipe2.arch0.dwm/w2.p_i_reg[1] input core0/noelv0/cpuloop[0].core/u0/mgen.mul0/m0/pipe2.arch0.dwm/w2.p_i_reg[1]/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP core0/noelv0/cpuloop[0].core/u0/mgen.mul0/m0/pipe2.arch0.dwm/w2.p_i_reg[1] input core0/noelv0/cpuloop[0].core/u0/mgen.mul0/m0/pipe2.arch0.dwm/w2.p_i_reg[1]/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP core0/noelv0/cpuloop[0].core/u0/mgen.mul0/m0/pipe2.arch0.dwm/w2.p_i_reg[1]__0 input core0/noelv0/cpuloop[0].core/u0/mgen.mul0/m0/pipe2.arch0.dwm/w2.p_i_reg[1]__0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP core0/noelv0/cpuloop[0].core/u0/mgen.mul0/m0/pipe2.arch0.dwm/w2.p_i_reg[1]__0 input core0/noelv0/cpuloop[0].core/u0/mgen.mul0/m0/pipe2.arch0.dwm/w2.p_i_reg[1]__0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP core0/noelv0/cpuloop[0].core/u0/mgen.mul0/m0/pipe2.arch0.dwm/w2.p_i_reg[1]__1 input core0/noelv0/cpuloop[0].core/u0/mgen.mul0/m0/pipe2.arch0.dwm/w2.p_i_reg[1]__1/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP core0/noelv0/cpuloop[0].core/u0/mgen.mul0/m0/pipe2.arch0.dwm/w2.p_i_reg[1]__1 input core0/noelv0/cpuloop[0].core/u0/mgen.mul0/m0/pipe2.arch0.dwm/w2.p_i_reg[1]__1/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP core0/noelv0/cpuloop[0].core/u0/mgen.mul0/m0/pipe2.arch0.dwm/w2.p_i_reg[1]__2 input core0/noelv0/cpuloop[0].core/u0/mgen.mul0/m0/pipe2.arch0.dwm/w2.p_i_reg[1]__2/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP core0/noelv0/cpuloop[0].core/u0/mgen.mul0/m0/pipe2.arch0.dwm/w2.p_i_reg[1]__2 input core0/noelv0/cpuloop[0].core/u0/mgen.mul0/m0/pipe2.arch0.dwm/w2.p_i_reg[1]__2/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP core0/noelv0/cpuloop[0].core/u0/fpu_gen.nano/p_0_out output core0/noelv0/cpuloop[0].core/u0/fpu_gen.nano/p_0_out/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP core0/noelv0/cpuloop[0].core/u0/mgen.mul0/m0/pipe2.arch0.dwm/ output core0/noelv0/cpuloop[0].core/u0/mgen.mul0/m0/pipe2.arch0.dwm//P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP core0/noelv0/cpuloop[0].core/u0/mgen.mul0/m0/pipe2.arch0.dwm/__1 output core0/noelv0/cpuloop[0].core/u0/mgen.mul0/m0/pipe2.arch0.dwm/__1/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP core0/noelv0/cpuloop[0].core/u0/mgen.mul0/m0/pipe2.arch0.dwm/__10 output core0/noelv0/cpuloop[0].core/u0/mgen.mul0/m0/pipe2.arch0.dwm/__10/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP core0/noelv0/cpuloop[0].core/u0/mgen.mul0/m0/pipe2.arch0.dwm/__3 output core0/noelv0/cpuloop[0].core/u0/mgen.mul0/m0/pipe2.arch0.dwm/__3/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP core0/noelv0/cpuloop[0].core/u0/mgen.mul0/m0/pipe2.arch0.dwm/__6 output core0/noelv0/cpuloop[0].core/u0/mgen.mul0/m0/pipe2.arch0.dwm/__6/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP core0/noelv0/cpuloop[0].core/u0/mgen.mul0/m0/pipe2.arch0.dwm/__8 output core0/noelv0/cpuloop[0].core/u0/mgen.mul0/m0/pipe2.arch0.dwm/__8/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP core0/noelv0/cpuloop[0].core/u0/fpu_gen.nano/srstregs.r_reg[mulo] multiplier stage core0/noelv0/cpuloop[0].core/u0/fpu_gen.nano/srstregs.r_reg[mulo]/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP core0/noelv0/cpuloop[0].core/u0/mgen.mul0/m0/pipe2.arch0.dwm/ multiplier stage core0/noelv0/cpuloop[0].core/u0/mgen.mul0/m0/pipe2.arch0.dwm//P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP core0/noelv0/cpuloop[0].core/u0/mgen.mul0/m0/pipe2.arch0.dwm/__1 multiplier stage core0/noelv0/cpuloop[0].core/u0/mgen.mul0/m0/pipe2.arch0.dwm/__1/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP core0/noelv0/cpuloop[0].core/u0/mgen.mul0/m0/pipe2.arch0.dwm/__10 multiplier stage core0/noelv0/cpuloop[0].core/u0/mgen.mul0/m0/pipe2.arch0.dwm/__10/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP core0/noelv0/cpuloop[0].core/u0/mgen.mul0/m0/pipe2.arch0.dwm/__3 multiplier stage core0/noelv0/cpuloop[0].core/u0/mgen.mul0/m0/pipe2.arch0.dwm/__3/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP core0/noelv0/cpuloop[0].core/u0/mgen.mul0/m0/pipe2.arch0.dwm/__6 multiplier stage core0/noelv0/cpuloop[0].core/u0/mgen.mul0/m0/pipe2.arch0.dwm/__6/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP core0/noelv0/cpuloop[0].core/u0/mgen.mul0/m0/pipe2.arch0.dwm/__8 multiplier stage core0/noelv0/cpuloop[0].core/u0/mgen.mul0/m0/pipe2.arch0.dwm/__8/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP core0/noelv0/cpuloop[0].core/u0/mgen.mul0/m0/pipe2.arch0.dwm/w2.p_i_reg[1] multiplier stage core0/noelv0/cpuloop[0].core/u0/mgen.mul0/m0/pipe2.arch0.dwm/w2.p_i_reg[1]/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP core0/noelv0/cpuloop[0].core/u0/mgen.mul0/m0/pipe2.arch0.dwm/w2.p_i_reg[1]__0 multiplier stage core0/noelv0/cpuloop[0].core/u0/mgen.mul0/m0/pipe2.arch0.dwm/w2.p_i_reg[1]__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP core0/noelv0/cpuloop[0].core/u0/mgen.mul0/m0/pipe2.arch0.dwm/w2.p_i_reg[1]__1 multiplier stage core0/noelv0/cpuloop[0].core/u0/mgen.mul0/m0/pipe2.arch0.dwm/w2.p_i_reg[1]__1/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP core0/noelv0/cpuloop[0].core/u0/mgen.mul0/m0/pipe2.arch0.dwm/w2.p_i_reg[1]__2 multiplier stage core0/noelv0/cpuloop[0].core/u0/mgen.mul0/m0/pipe2.arch0.dwm/w2.p_i_reg[1]__2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+INFO: [Vivado 12-3199] DRC finished with 0 Errors, 53 Warnings
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+INFO: [Designutils 20-2272] Running write_bitstream with 8 threads.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Writing bitstream ./noelvmp.bit...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Project 1-118] WebTalk data collection is enabled (User setting is ON. Install Setting is ON.).
+INFO: [Common 17-186] '/home/zhichao/Downloads/GRLIB/grlib-7-series/grlib-gpl-2022.4-b4280/designs/noelv-digilent-arty-a7-study/vivado/noelv-digilent-arty-a7/noelv-digilent-arty-a7.runs/impl_1/usage_statistics_webtalk.xml' has been successfully sent to Xilinx on Fri Feb  3 23:45:43 2023. For additional details about this file, please refer to the WebTalk help file at /opt/Xilinx/Vivado/2019.1/doc/webtalk_introduction.html.
+INFO: [Common 17-83] Releasing license: Implementation
+150 Infos, 228 Warnings, 130 Critical Warnings and 0 Errors encountered.
+write_bitstream completed successfully
+write_bitstream: Time (s): cpu = 00:00:33 ; elapsed = 00:00:21 . Memory (MB): peak = 3502.625 ; gain = 233.086 ; free physical = 4232 ; free virtual = 45098
+INFO: [Common 17-206] Exiting Vivado at Fri Feb  3 23:45:43 2023...
